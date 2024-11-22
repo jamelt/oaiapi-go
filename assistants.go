@@ -78,6 +78,7 @@ func (s *Assistants) List(ctx context.Context, limit *int64, order *operations.O
 	}
 	req.Header.Set("Accept", "application/json")
 	req.Header.Set("User-Agent", s.sdkConfiguration.UserAgent)
+	req.Header.Set("OpenAI-Beta", "assistants=v2")
 
 	if err := utils.PopulateQueryParams(ctx, req, request, nil); err != nil {
 		return nil, fmt.Errorf("error populating query params: %w", err)
