@@ -1,0 +1,10 @@
+# SubmitToolOuputsToRunRequest
+
+
+## Fields
+
+| Field                                                                                            | Type                                                                                             | Required                                                                                         | Description                                                                                      |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| `ThreadID`                                                                                       | *string*                                                                                         | :heavy_check_mark:                                                                               | The ID of the [thread](/docs/api-reference/threads) to which this run belongs.                   |
+| `RunID`                                                                                          | *string*                                                                                         | :heavy_check_mark:                                                                               | The ID of the run that requires the tool output submission.                                      |
+| `SubmitToolOutputsRunRequest`                                                                    | [components.SubmitToolOutputsRunRequest](../../models/components/submittooloutputsrunrequest.md) | :heavy_check_mark:                                                                               | N/A                                                                                              |

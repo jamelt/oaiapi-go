@@ -1,0 +1,10 @@
+# ListFineTuningJobCheckpointsRequest
+
+
+## Fields
+
+| Field                                                                       | Type                                                                        | Required                                                                    | Description                                                                 | Example                                                                     |
+| --------------------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| `FineTuningJobID`                                                           | *string*                                                                    | :heavy_check_mark:                                                          | The ID of the fine-tuning job to get checkpoints for.<br/>                  | ft-AF1WoRqd3aJAHsqc9NY7iL8F                                                 |
+| `After`                                                                     | **string*                                                                   | :heavy_minus_sign:                                                          | Identifier for the last checkpoint ID from the previous pagination request. |                                                                             |
+| `Limit`                                                                     | **int64*                                                                    | :heavy_minus_sign:                                                          | Number of checkpoints to retrieve.                                          |                                                                             |

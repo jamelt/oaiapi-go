@@ -1,0 +1,9 @@
+# DeleteProjectAPIKeyResponse
+
+
+## Fields
+
+| Field                                                                                             | Type                                                                                              | Required                                                                                          | Description                                                                                       |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| `HTTPMeta`                                                                                        | [components.HTTPMetadata](../../models/components/httpmetadata.md)                                | :heavy_check_mark:                                                                                | N/A                                                                                               |
+| `ProjectAPIKeyDeleteResponse`                                                                     | [*components.ProjectAPIKeyDeleteResponse](../../models/components/projectapikeydeleteresponse.md) | :heavy_minus_sign:                                                                                | Project API key deleted successfully.                                                             |

@@ -1,0 +1,12 @@
+# ChatCompletionRequestMessageContentPartImage
+
+Learn about [image inputs](/docs/guides/vision).
+
+
+
+## Fields
+
+| Field                                                                                                                                      | Type                                                                                                                                       | Required                                                                                                                                   | Description                                                                                                                                |
+| ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| `Type`                                                                                                                                     | [components.ChatCompletionRequestMessageContentPartImageType](../../models/components/chatcompletionrequestmessagecontentpartimagetype.md) | :heavy_check_mark:                                                                                                                         | The type of the content part.                                                                                                              |
+| `ImageURL`                                                                                                                                 | [components.ImageURL](../../models/components/imageurl.md)                                                                                 | :heavy_check_mark:                                                                                                                         | N/A                                                                                                                                        |

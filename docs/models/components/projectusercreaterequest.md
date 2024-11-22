@@ -1,0 +1,9 @@
+# ProjectUserCreateRequest
+
+
+## Fields
+
+| Field                                                                                              | Type                                                                                               | Required                                                                                           | Description                                                                                        |
+| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| `UserID`                                                                                           | *string*                                                                                           | :heavy_check_mark:                                                                                 | The ID of the user.                                                                                |
+| `Role`                                                                                             | [components.ProjectUserCreateRequestRole](../../models/components/projectusercreaterequestrole.md) | :heavy_check_mark:                                                                                 | `owner` or `member`                                                                                |

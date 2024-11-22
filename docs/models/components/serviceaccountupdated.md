@@ -1,0 +1,11 @@
+# ServiceAccountUpdated
+
+The details for events with this `type`.
+
+
+## Fields
+
+| Field                                                                                                                                 | Type                                                                                                                                  | Required                                                                                                                              | Description                                                                                                                           |
+| ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| `ID`                                                                                                                                  | **string*                                                                                                                             | :heavy_minus_sign:                                                                                                                    | The service account ID.                                                                                                               |
+| `ChangesRequested`                                                                                                                    | [*components.AuditLogServiceAccountUpdatedChangesRequested](../../models/components/auditlogserviceaccountupdatedchangesrequested.md) | :heavy_minus_sign:                                                                                                                    | The payload used to updated the service account.                                                                                      |

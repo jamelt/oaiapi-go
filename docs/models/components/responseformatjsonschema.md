@@ -1,0 +1,9 @@
+# ResponseFormatJSONSchema
+
+
+## Fields
+
+| Field                                                                                              | Type                                                                                               | Required                                                                                           | Description                                                                                        |
+| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| `Type`                                                                                             | [components.ResponseFormatJSONSchemaType](../../models/components/responseformatjsonschematype.md) | :heavy_check_mark:                                                                                 | The type of response format being defined: `json_schema`                                           |
+| `JSONSchema`                                                                                       | [components.JSONSchema](../../models/components/jsonschema.md)                                     | :heavy_check_mark:                                                                                 | N/A                                                                                                |

@@ -1,0 +1,10 @@
+# InviteDeleteResponse
+
+
+## Fields
+
+| Field                                                                                          | Type                                                                                           | Required                                                                                       | Description                                                                                    |
+| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| `Object`                                                                                       | [components.InviteDeleteResponseObject](../../models/components/invitedeleteresponseobject.md) | :heavy_check_mark:                                                                             | The object type, which is always `organization.invite.deleted`                                 |
+| `ID`                                                                                           | *string*                                                                                       | :heavy_check_mark:                                                                             | N/A                                                                                            |
+| `Deleted`                                                                                      | *bool*                                                                                         | :heavy_check_mark:                                                                             | N/A                                                                                            |

@@ -1,0 +1,9 @@
+# CreateProjectServiceAccountResponse
+
+
+## Fields
+
+| Field                                                                                                             | Type                                                                                                              | Required                                                                                                          | Description                                                                                                       |
+| ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| `HTTPMeta`                                                                                                        | [components.HTTPMetadata](../../models/components/httpmetadata.md)                                                | :heavy_check_mark:                                                                                                | N/A                                                                                                               |
+| `ProjectServiceAccountCreateResponse`                                                                             | [*components.ProjectServiceAccountCreateResponse](../../models/components/projectserviceaccountcreateresponse.md) | :heavy_minus_sign:                                                                                                | Project service account created successfully.                                                                     |

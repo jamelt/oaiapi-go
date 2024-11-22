@@ -1,0 +1,9 @@
+# CreateProjectServiceAccountRequest
+
+
+## Fields
+
+| Field                                                                                                          | Type                                                                                                           | Required                                                                                                       | Description                                                                                                    |
+| -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| `ProjectID`                                                                                                    | *string*                                                                                                       | :heavy_check_mark:                                                                                             | The ID of the project.                                                                                         |
+| `ProjectServiceAccountCreateRequest`                                                                           | [components.ProjectServiceAccountCreateRequest](../../models/components/projectserviceaccountcreaterequest.md) | :heavy_check_mark:                                                                                             | The project service account create request payload.                                                            |

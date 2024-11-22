@@ -1,0 +1,14 @@
+# CreateTranscriptionResponseVerboseJSON
+
+Represents a verbose json transcription response returned by model, based on the provided input.
+
+
+## Fields
+
+| Field                                                                                | Type                                                                                 | Required                                                                             | Description                                                                          |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
+| `Language`                                                                           | *string*                                                                             | :heavy_check_mark:                                                                   | The language of the input audio.                                                     |
+| `Duration`                                                                           | *string*                                                                             | :heavy_check_mark:                                                                   | The duration of the input audio.                                                     |
+| `Text`                                                                               | *string*                                                                             | :heavy_check_mark:                                                                   | The transcribed text.                                                                |
+| `Words`                                                                              | [][components.TranscriptionWord](../../models/components/transcriptionword.md)       | :heavy_minus_sign:                                                                   | Extracted words and their corresponding timestamps.                                  |
+| `Segments`                                                                           | [][components.TranscriptionSegment](../../models/components/transcriptionsegment.md) | :heavy_minus_sign:                                                                   | Segments of the transcribed text and their corresponding details.                    |

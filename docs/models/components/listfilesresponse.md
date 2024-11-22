@@ -1,0 +1,12 @@
+# ListFilesResponse
+
+
+## Fields
+
+| Field                                                            | Type                                                             | Required                                                         | Description                                                      | Example                                                          |
+| ---------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------- |
+| `Object`                                                         | *string*                                                         | :heavy_check_mark:                                               | N/A                                                              | list                                                             |
+| `Data`                                                           | [][components.OpenAIFile](../../models/components/openaifile.md) | :heavy_check_mark:                                               | N/A                                                              |                                                                  |
+| `FirstID`                                                        | *string*                                                         | :heavy_check_mark:                                               | N/A                                                              | file-abc123                                                      |
+| `LastID`                                                         | *string*                                                         | :heavy_check_mark:                                               | N/A                                                              | file-abc456                                                      |
+| `HasMore`                                                        | *bool*                                                           | :heavy_check_mark:                                               | N/A                                                              | false                                                            |

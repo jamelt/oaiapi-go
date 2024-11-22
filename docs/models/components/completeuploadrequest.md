@@ -1,0 +1,9 @@
+# CompleteUploadRequest
+
+
+## Fields
+
+| Field                                                                                                     | Type                                                                                                      | Required                                                                                                  | Description                                                                                               |
+| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| `PartIds`                                                                                                 | []*string*                                                                                                | :heavy_check_mark:                                                                                        | The ordered list of Part IDs.<br/>                                                                        |
+| `Md5`                                                                                                     | **string*                                                                                                 | :heavy_minus_sign:                                                                                        | The optional md5 checksum for the file contents to verify if the bytes uploaded matches what you expect.<br/> |

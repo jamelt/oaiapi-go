@@ -1,0 +1,12 @@
+# ChatCompletionRequestMessageContentPartText
+
+Learn about [text inputs](/docs/guides/text-generation).
+
+
+
+## Fields
+
+| Field                                                                                                                                    | Type                                                                                                                                     | Required                                                                                                                                 | Description                                                                                                                              |
+| ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| `Type`                                                                                                                                   | [components.ChatCompletionRequestMessageContentPartTextType](../../models/components/chatcompletionrequestmessagecontentparttexttype.md) | :heavy_check_mark:                                                                                                                       | The type of the content part.                                                                                                            |
+| `Text`                                                                                                                                   | *string*                                                                                                                                 | :heavy_check_mark:                                                                                                                       | The text content.                                                                                                                        |

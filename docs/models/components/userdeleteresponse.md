@@ -1,0 +1,10 @@
+# UserDeleteResponse
+
+
+## Fields
+
+| Field                                                                                      | Type                                                                                       | Required                                                                                   | Description                                                                                |
+| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| `Object`                                                                                   | [components.UserDeleteResponseObject](../../models/components/userdeleteresponseobject.md) | :heavy_check_mark:                                                                         | N/A                                                                                        |
+| `ID`                                                                                       | *string*                                                                                   | :heavy_check_mark:                                                                         | N/A                                                                                        |
+| `Deleted`                                                                                  | *bool*                                                                                     | :heavy_check_mark:                                                                         | N/A                                                                                        |

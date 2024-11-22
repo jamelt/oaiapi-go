@@ -1,0 +1,9 @@
+# AssistantToolsFileSearch
+
+
+## Fields
+
+| Field                                                                                              | Type                                                                                               | Required                                                                                           | Description                                                                                        |
+| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| `Type`                                                                                             | [components.AssistantToolsFileSearchType](../../models/components/assistanttoolsfilesearchtype.md) | :heavy_check_mark:                                                                                 | The type of tool being defined: `file_search`                                                      |
+| `FileSearch`                                                                                       | [*components.FileSearch](../../models/components/filesearch.md)                                    | :heavy_minus_sign:                                                                                 | Overrides for the file search tool.                                                                |

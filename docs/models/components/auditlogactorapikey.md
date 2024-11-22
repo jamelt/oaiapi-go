@@ -1,0 +1,13 @@
+# AuditLogActorAPIKey
+
+The API Key used to perform the audit logged action.
+
+
+## Fields
+
+| Field                                                                                             | Type                                                                                              | Required                                                                                          | Description                                                                                       |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| `ID`                                                                                              | **string*                                                                                         | :heavy_minus_sign:                                                                                | The tracking id of the API key.                                                                   |
+| `Type`                                                                                            | [*components.AuditLogActorAPIKeyType](../../models/components/auditlogactorapikeytype.md)         | :heavy_minus_sign:                                                                                | The type of API key. Can be either `user` or `service_account`.                                   |
+| `User`                                                                                            | [*components.AuditLogActorUser](../../models/components/auditlogactoruser.md)                     | :heavy_minus_sign:                                                                                | The user who performed the audit logged action.                                                   |
+| `ServiceAccount`                                                                                  | [*components.AuditLogActorServiceAccount](../../models/components/auditlogactorserviceaccount.md) | :heavy_minus_sign:                                                                                | The service account that performed the audit logged action.                                       |

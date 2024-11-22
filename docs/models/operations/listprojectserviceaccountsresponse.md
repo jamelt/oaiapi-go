@@ -1,0 +1,9 @@
+# ListProjectServiceAccountsResponse
+
+
+## Fields
+
+| Field                                                                                                         | Type                                                                                                          | Required                                                                                                      | Description                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| `HTTPMeta`                                                                                                    | [components.HTTPMetadata](../../models/components/httpmetadata.md)                                            | :heavy_check_mark:                                                                                            | N/A                                                                                                           |
+| `ProjectServiceAccountListResponse`                                                                           | [*components.ProjectServiceAccountListResponse](../../models/components/projectserviceaccountlistresponse.md) | :heavy_minus_sign:                                                                                            | Project service accounts listed successfully.                                                                 |

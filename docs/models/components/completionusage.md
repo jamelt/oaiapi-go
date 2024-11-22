@@ -1,0 +1,14 @@
+# CompletionUsage
+
+Usage statistics for the completion request.
+
+
+## Fields
+
+| Field                                                                                     | Type                                                                                      | Required                                                                                  | Description                                                                               |
+| ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| `CompletionTokens`                                                                        | *int64*                                                                                   | :heavy_check_mark:                                                                        | Number of tokens in the generated completion.                                             |
+| `PromptTokens`                                                                            | *int64*                                                                                   | :heavy_check_mark:                                                                        | Number of tokens in the prompt.                                                           |
+| `TotalTokens`                                                                             | *int64*                                                                                   | :heavy_check_mark:                                                                        | Total number of tokens used in the request (prompt + completion).                         |
+| `CompletionTokensDetails`                                                                 | [*components.CompletionTokensDetails](../../models/components/completiontokensdetails.md) | :heavy_minus_sign:                                                                        | Breakdown of tokens used in a completion.                                                 |
+| `PromptTokensDetails`                                                                     | [*components.PromptTokensDetails](../../models/components/prompttokensdetails.md)         | :heavy_minus_sign:                                                                        | Breakdown of tokens used in the prompt.                                                   |

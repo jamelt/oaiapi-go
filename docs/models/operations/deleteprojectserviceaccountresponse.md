@@ -1,0 +1,9 @@
+# DeleteProjectServiceAccountResponse
+
+
+## Fields
+
+| Field                                                                                                             | Type                                                                                                              | Required                                                                                                          | Description                                                                                                       |
+| ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| `HTTPMeta`                                                                                                        | [components.HTTPMetadata](../../models/components/httpmetadata.md)                                                | :heavy_check_mark:                                                                                                | N/A                                                                                                               |
+| `ProjectServiceAccountDeleteResponse`                                                                             | [*components.ProjectServiceAccountDeleteResponse](../../models/components/projectserviceaccountdeleteresponse.md) | :heavy_minus_sign:                                                                                                | Project service account deleted successfully.                                                                     |

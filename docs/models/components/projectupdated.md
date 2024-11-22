@@ -1,0 +1,11 @@
+# ProjectUpdated
+
+The details for events with this `type`.
+
+
+## Fields
+
+| Field                                                                                                                   | Type                                                                                                                    | Required                                                                                                                | Description                                                                                                             |
+| ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `ID`                                                                                                                    | **string*                                                                                                               | :heavy_minus_sign:                                                                                                      | The project ID.                                                                                                         |
+| `ChangesRequested`                                                                                                      | [*components.AuditLogProjectUpdatedChangesRequested](../../models/components/auditlogprojectupdatedchangesrequested.md) | :heavy_minus_sign:                                                                                                      | The payload used to update the project.                                                                                 |

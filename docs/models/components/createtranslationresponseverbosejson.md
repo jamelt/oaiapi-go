@@ -1,0 +1,11 @@
+# CreateTranslationResponseVerboseJSON
+
+
+## Fields
+
+| Field                                                                                | Type                                                                                 | Required                                                                             | Description                                                                          |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
+| `Language`                                                                           | *string*                                                                             | :heavy_check_mark:                                                                   | The language of the output translation (always `english`).                           |
+| `Duration`                                                                           | *string*                                                                             | :heavy_check_mark:                                                                   | The duration of the input audio.                                                     |
+| `Text`                                                                               | *string*                                                                             | :heavy_check_mark:                                                                   | The translated text.                                                                 |
+| `Segments`                                                                           | [][components.TranscriptionSegment](../../models/components/transcriptionsegment.md) | :heavy_minus_sign:                                                                   | Segments of the translated text and their corresponding details.                     |

@@ -1,0 +1,11 @@
+# Three2
+
+An object describing text to classify.
+
+
+## Fields
+
+| Field                                                                                              | Type                                                                                               | Required                                                                                           | Description                                                                                        | Example                                                                                            |
+| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| `Type`                                                                                             | [components.CreateModerationRequest3Type](../../models/components/createmoderationrequest3type.md) | :heavy_check_mark:                                                                                 | Always `text`.                                                                                     |                                                                                                    |
+| `Text`                                                                                             | *string*                                                                                           | :heavy_check_mark:                                                                                 | A string of text to classify.                                                                      | I want to kill them                                                                                |

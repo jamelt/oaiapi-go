@@ -1,0 +1,12 @@
+# ChatCompletionRequestMessageContentPartAudio
+
+Learn about [audio inputs](/docs/guides/audio).
+
+
+
+## Fields
+
+| Field                                                                                                                                      | Type                                                                                                                                       | Required                                                                                                                                   | Description                                                                                                                                |
+| ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| `Type`                                                                                                                                     | [components.ChatCompletionRequestMessageContentPartAudioType](../../models/components/chatcompletionrequestmessagecontentpartaudiotype.md) | :heavy_check_mark:                                                                                                                         | The type of the content part. Always `input_audio`.                                                                                        |
+| `InputAudio`                                                                                                                               | [components.InputAudio](../../models/components/inputaudio.md)                                                                             | :heavy_check_mark:                                                                                                                         | N/A                                                                                                                                        |

@@ -1,0 +1,35 @@
+speakeasyVersion: 1.443.0
+sources:
+    openai-api-OAS:
+        sourceNamespace: openai-api-oas
+        sourceRevisionDigest: sha256:4f605df99068c3b5eb0cfcb41f6fb154e4589646a065bc7262e1fdcdd6849e6e
+        sourceBlobDigest: sha256:2b8e35217f3702d75dea916028a8ad99a9b590353a16ccdec483f7680b106e84
+        tags:
+            - latest
+targets:
+    openai-api:
+        source: openai-api-OAS
+        sourceNamespace: openai-api-oas
+        sourceRevisionDigest: sha256:4f605df99068c3b5eb0cfcb41f6fb154e4589646a065bc7262e1fdcdd6849e6e
+        sourceBlobDigest: sha256:2b8e35217f3702d75dea916028a8ad99a9b590353a16ccdec483f7680b106e84
+        codeSamplesNamespace: openai-api-oas-code-samples
+        codeSamplesRevisionDigest: sha256:aac0266c834834ce1f3e7b34707dd812b3ab7f506a28bff932ad4ad61400bd39
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        openai-api-OAS:
+            inputs:
+                - location: openai.yaml
+            overlays:
+                - location: .speakeasy/speakeasy-modifications-overlay.yaml
+            registry:
+                location: registry.speakeasyapi.dev/jamelt/jamelt/openai-api-oas
+    targets:
+        openai-api:
+            target: go
+            source: openai-api-OAS
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/jamelt/jamelt/openai-api-oas-code-samples
+                blocking: false

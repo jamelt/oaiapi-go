@@ -1,0 +1,18 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    openai-api-OAS:
+        inputs:
+            - location: openai.yaml
+        overlays:
+            - location: .speakeasy/speakeasy-modifications-overlay.yaml
+        registry:
+            location: registry.speakeasyapi.dev/jamelt/jamelt/openai-api-oas
+targets:
+    openai-api:
+        target: go
+        source: openai-api-OAS
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/jamelt/jamelt/openai-api-oas-code-samples
+            blocking: false

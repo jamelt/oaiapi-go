@@ -1,0 +1,698 @@
+overlay: 1.0.0
+info:
+  title: Speakeasy Modifications
+  version: 0.0.2
+  x-speakeasy-metadata:
+    after: ""
+    before: ""
+    type: speakeasy-modifications
+actions:
+  - target: $["paths"]["/batches/{batch_id}/cancel"]["post"]
+    update:
+      x-speakeasy-group: batches
+      x-speakeasy-name-override: cancel
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Batch.cancelBatch()
+      after: sdk.batches.cancel()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/vector_stores/{vector_store_id}/file_batches/{batch_id}/files"]["get"]
+    update:
+      x-speakeasy-group: vectorStores
+      x-speakeasy-name-override: listBatchFiles
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Vector stores.listFilesInVectorStoreBatch()
+      after: sdk.vectorStores.listBatchFiles()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/vector_stores/{vector_store_id}/files/{file_id}"]["get"]
+    update:
+      x-speakeasy-group: vectorStores
+      x-speakeasy-name-override: getFile
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Vector stores.getVectorStoreFile()
+      after: sdk.vectorStores.getFile()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/chat/completions"]["post"]
+    update:
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Chat.createChatCompletion()
+      after: sdk.chat.create()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/organization/users"]["get"]
+    update:
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Users.list-users()
+      after: sdk.users.list()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/models"]["get"]
+    update:
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Models.listModels()
+      after: sdk.models.list()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/assistants/{assistant_id}"]["delete"]
+    update:
+      x-speakeasy-name-override: delete
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Assistants.deleteAssistant()
+      after: sdk.assistants.delete()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/fine_tuning/jobs"]["get"]
+    update:
+      x-speakeasy-group: fineTuning
+      x-speakeasy-name-override: listJobs
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Fine-tuning.listPaginatedFineTuningJobs()
+      after: sdk.fineTuning.listJobs()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/organization/invites"]["post"]
+    update:
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Invites.inviteUser()
+      after: sdk.invites.create()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/files"]["get"]
+    update:
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Files.listFiles()
+      after: sdk.files.list()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/embeddings"]["post"]
+    update:
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Embeddings.createEmbedding()
+      after: sdk.embeddings.create()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/organization/projects/{project_id}"]["post"]
+    update:
+      x-speakeasy-name-override: update
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Projects.modify-project()
+      after: sdk.projects.update()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/uploads"]["post"]
+    update:
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Uploads.createUpload()
+      after: sdk.uploads.create()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/batches/{batch_id}"]["get"]
+    update:
+      x-speakeasy-name-override: get
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Batch.retrieveBatch()
+      after: sdk.batch.get()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/assistants"]["get"]
+    update:
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Assistants.listAssistants()
+      after: sdk.assistants.list()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/fine_tuning/jobs/{fine_tuning_job_id}/checkpoints"]["get"]
+    update:
+      x-speakeasy-group: fineTuning
+      x-speakeasy-name-override: listJobCheckpoints
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Fine-tuning.listFineTuningJobCheckpoints()
+      after: sdk.fineTuning.listJobCheckpoints()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/organization/projects"]["get"]
+    update:
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Projects.list-projects()
+      after: sdk.projects.list()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/organization/projects/{project_id}/users"]["get"]
+    update:
+      x-speakeasy-name-override: listUsers
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Projects.list-project-users()
+      after: sdk.projects.listUsers()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/uploads/{upload_id}/parts"]["post"]
+    update:
+      x-speakeasy-name-override: addPart
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Uploads.addUploadPart()
+      after: sdk.uploads.addPart()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/files/{file_id}"]["delete"]
+    update:
+      x-speakeasy-name-override: delete
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Files.deleteFile()
+      after: sdk.files.delete()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/organization/projects/{project_id}/users/{user_id}"]["post"]
+    update:
+      x-speakeasy-name-override: modifyUser
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Projects.modify-project-user()
+      after: sdk.projects.modifyUser()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/uploads/{upload_id}/cancel"]["post"]
+    update:
+      x-speakeasy-name-override: cancel
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Uploads.cancelUpload()
+      after: sdk.uploads.cancel()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/files/{file_id}/content"]["get"]
+    update:
+      x-speakeasy-name-override: download
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Files.downloadFile()
+      after: sdk.files.download()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/fine_tuning/jobs/{fine_tuning_job_id}/cancel"]["post"]
+    update:
+      x-speakeasy-group: fineTuning
+      x-speakeasy-name-override: cancelJob
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Fine-tuning.cancelFineTuningJob()
+      after: sdk.fineTuning.cancelJob()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/moderations"]["post"]
+    update:
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Moderations.createModeration()
+      after: sdk.moderations.create()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/files/{file_id}"]["get"]
+    update:
+      x-speakeasy-name-override: get
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Files.retrieveFile()
+      after: sdk.files.get()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/organization/invites"]["get"]
+    update:
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Invites.list-invites()
+      after: sdk.invites.list()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/images/generations"]["post"]
+    update:
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Images.createImage()
+      after: sdk.images.create()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/vector_stores/{vector_store_id}/file_batches"]["post"]
+    update:
+      x-speakeasy-group: vectorStores
+      x-speakeasy-name-override: createFileBatch
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Vector stores.createVectorStoreFileBatch()
+      after: sdk.vectorStores.createFileBatch()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/organization/projects/{project_id}/api_keys/{key_id}"]["delete"]
+    update:
+      x-speakeasy-name-override: deleteApiKey
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Projects.delete-project-api-key()
+      after: sdk.projects.deleteApiKey()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/assistants/{assistant_id}"]["get"]
+    update:
+      x-speakeasy-name-override: get
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Assistants.getAssistant()
+      after: sdk.assistants.get()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/vector_stores"]["post"]
+    update:
+      x-speakeasy-group: vectorStores
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Vector stores.createVectorStore()
+      after: sdk.vectorStores.create()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/organization/users/{user_id}"]["delete"]
+    update:
+      x-speakeasy-name-override: delete
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Users.delete-user()
+      after: sdk.users.delete()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/organization/users/{user_id}"]["post"]
+    update:
+      x-speakeasy-name-override: modify
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Users.modify-user()
+      after: sdk.users.modify()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/images/variations"]["post"]
+    update:
+      x-speakeasy-name-override: createVariation
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Images.createImageVariation()
+      after: sdk.images.createVariation()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/organization/audit_logs"]["get"]
+    update:
+      x-speakeasy-group: auditLogs
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Audit Logs.list-audit-logs()
+      after: sdk.auditLogs.list()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/vector_stores/{vector_store_id}/file_batches/{batch_id}/cancel"]["post"]
+    update:
+      x-speakeasy-group: vectorStores
+      x-speakeasy-name-override: cancelFileBatch
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Vector stores.cancelVectorStoreFileBatch()
+      after: sdk.vectorStores.cancelFileBatch()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/batches"]["get"]
+    update:
+      x-speakeasy-group: batches
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Batch.listBatches()
+      after: sdk.batches.list()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/batches"]["post"]
+    update:
+      x-speakeasy-group: batches
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Batch.createBatch()
+      after: sdk.batches.create()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/organization/projects"]["post"]
+    update:
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Projects.create-project()
+      after: sdk.projects.create()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/organization/invites/{invite_id}"]["get"]
+    update:
+      x-speakeasy-name-override: get
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Invites.retrieve-invite()
+      after: sdk.invites.get()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/organization/projects/{project_id}"]["get"]
+    update:
+      x-speakeasy-name-override: get
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Projects.retrieve-project()
+      after: sdk.projects.get()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/organization/projects/{project_id}/service_accounts/{service_account_id}"]["delete"]
+    update:
+      x-speakeasy-name-override: deleteServiceAccount
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Projects.delete-project-service-account()
+      after: sdk.projects.deleteServiceAccount()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/organization/projects/{project_id}/users"]["post"]
+    update:
+      x-speakeasy-name-override: createUser
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Projects.create-project-user()
+      after: sdk.projects.createUser()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/vector_stores/{vector_store_id}/files"]["get"]
+    update:
+      x-speakeasy-group: vectorStores
+      x-speakeasy-name-override: listFiles
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Vector stores.listVectorStoreFiles()
+      after: sdk.vectorStores.listFiles()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/organization/invites/{invite_id}"]["delete"]
+    update:
+      x-speakeasy-name-override: delete
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Invites.delete-invite()
+      after: sdk.invites.delete()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/organization/projects/{project_id}/users/{user_id}"]["delete"]
+    update:
+      x-speakeasy-name-override: deleteUser
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Projects.delete-project-user()
+      after: sdk.projects.deleteUser()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/organization/users/{user_id}"]["get"]
+    update:
+      x-speakeasy-name-override: get
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Users.retrieve-user()
+      after: sdk.users.get()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/fine_tuning/jobs"]["post"]
+    update:
+      x-speakeasy-group: fineTuning
+      x-speakeasy-name-override: createJob
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Fine-tuning.createFineTuningJob()
+      after: sdk.fineTuning.createJob()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/completions"]["post"]
+    update:
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Completions.createCompletion()
+      after: sdk.completions.create()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/organization/projects/{project_id}/archive"]["post"]
+    update:
+      x-speakeasy-name-override: archive
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Projects.archive-project()
+      after: sdk.projects.archive()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/fine_tuning/jobs/{fine_tuning_job_id}/events"]["get"]
+    update:
+      x-speakeasy-group: fineTuning
+      x-speakeasy-name-override: listEvents
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Fine-tuning.listFineTuningEvents()
+      after: sdk.fineTuning.listEvents()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/vector_stores/{vector_store_id}"]["delete"]
+    update:
+      x-speakeasy-group: vectorStores
+      x-speakeasy-name-override: delete
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Vector stores.deleteVectorStore()
+      after: sdk.vectorStores.delete()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/images/edits"]["post"]
+    update:
+      x-speakeasy-name-override: createEdit
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Images.createImageEdit()
+      after: sdk.images.createEdit()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/uploads/{upload_id}/complete"]["post"]
+    update:
+      x-speakeasy-name-override: complete
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Uploads.completeUpload()
+      after: sdk.uploads.complete()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/assistants"]["post"]
+    update:
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Assistants.createAssistant()
+      after: sdk.assistants.create()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/assistants/{assistant_id}"]["post"]
+    update:
+      x-speakeasy-name-override: modify
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Assistants.modifyAssistant()
+      after: sdk.assistants.modify()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/organization/projects/{project_id}/api_keys/{key_id}"]["get"]
+    update:
+      x-speakeasy-name-override: getApiKey
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Projects.retrieve-project-api-key()
+      after: sdk.projects.getApiKey()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/threads/{thread_id}/runs/{run_id}/submit_tool_outputs"]["post"]
+    update:
+      x-speakeasy-name-override: submitToolOutputsToRun
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Assistants.submitToolOuputsToRun()
+      after: sdk.assistants.submitToolOutputsToRun()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/vector_stores"]["get"]
+    update:
+      x-speakeasy-group: vectorStores
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Vector stores.listVectorStores()
+      after: sdk.vectorStores.list()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/fine_tuning/jobs/{fine_tuning_job_id}"]["get"]
+    update:
+      x-speakeasy-group: fineTuning
+      x-speakeasy-name-override: getJob
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Fine-tuning.retrieveFineTuningJob()
+      after: sdk.fineTuning.getJob()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/organization/projects/{project_id}/users/{user_id}"]["get"]
+    update:
+      x-speakeasy-name-override: getUser
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Projects.retrieve-project-user()
+      after: sdk.projects.getUser()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/vector_stores/{vector_store_id}/files"]["post"]
+    update:
+      x-speakeasy-group: vectorStores
+      x-speakeasy-name-override: createFile
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Vector stores.createVectorStoreFile()
+      after: sdk.vectorStores.createFile()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/vector_stores/{vector_store_id}/files/{file_id}"]["delete"]
+    update:
+      x-speakeasy-group: vectorStores
+      x-speakeasy-name-override: deleteFile
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Vector stores.deleteVectorStoreFile()
+      after: sdk.vectorStores.deleteFile()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/organization/projects/{project_id}/service_accounts/{service_account_id}"]["get"]
+    update:
+      x-speakeasy-name-override: getServiceAccount
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Projects.retrieve-project-service-account()
+      after: sdk.projects.getServiceAccount()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/vector_stores/{vector_store_id}"]["post"]
+    update:
+      x-speakeasy-group: vectorStores
+      x-speakeasy-name-override: modify
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Vector stores.modifyVectorStore()
+      after: sdk.vectorStores.modify()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/models/{model}"]["delete"]
+    update:
+      x-speakeasy-name-override: delete
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Models.deleteModel()
+      after: sdk.models.delete()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/models/{model}"]["get"]
+    update:
+      x-speakeasy-name-override: get
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Models.retrieveModel()
+      after: sdk.models.get()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/organization/projects/{project_id}/service_accounts"]["get"]
+    update:
+      x-speakeasy-name-override: listServiceAccounts
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Projects.list-project-service-accounts()
+      after: sdk.projects.listServiceAccounts()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/organization/projects/{project_id}/api_keys"]["get"]
+    update:
+      x-speakeasy-name-override: listApiKeys
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Projects.list-project-api-keys()
+      after: sdk.projects.listApiKeys()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/vector_stores/{vector_store_id}/file_batches/{batch_id}"]["get"]
+    update:
+      x-speakeasy-group: vectorStores
+      x-speakeasy-name-override: getFileBatch
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Vector stores.getVectorStoreFileBatch()
+      after: sdk.vectorStores.getFileBatch()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/files"]["post"]
+    update:
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Files.createFile()
+      after: sdk.files.create()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936
+  - target: $["paths"]["/organization/projects/{project_id}/service_accounts"]["post"]
+    update:
+      x-speakeasy-name-override: createServiceAccount
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Projects.create-project-service-account()
+      after: sdk.projects.createServiceAccount()
+      reviewed_at: 1732253817041
+      created_at: 1732253812935
+  - target: $["paths"]["/vector_stores/{vector_store_id}"]["get"]
+    update:
+      x-speakeasy-group: vectorStores
+      x-speakeasy-name-override: get
+    x-speakeasy-metadata:
+      type: method-name
+      before: sdk.Vector stores.getVectorStore()
+      after: sdk.vectorStores.get()
+      reviewed_at: 1732253817041
+      created_at: 1732253812936

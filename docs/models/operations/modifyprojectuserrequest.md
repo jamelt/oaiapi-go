@@ -1,0 +1,10 @@
+# ModifyProjectUserRequest
+
+
+## Fields
+
+| Field                                                                                      | Type                                                                                       | Required                                                                                   | Description                                                                                |
+| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| `ProjectID`                                                                                | *string*                                                                                   | :heavy_check_mark:                                                                         | The ID of the project.                                                                     |
+| `UserID`                                                                                   | *string*                                                                                   | :heavy_check_mark:                                                                         | The ID of the user.                                                                        |
+| `ProjectUserUpdateRequest`                                                                 | [components.ProjectUserUpdateRequest](../../models/components/projectuserupdaterequest.md) | :heavy_check_mark:                                                                         | The project user update request payload.                                                   |

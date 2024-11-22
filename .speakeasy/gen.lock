@@ -1,0 +1,1934 @@
+lockVersion: 2.0.0
+id: 91074390-7f0c-4371-884d-2ee055c839f7
+management:
+  docChecksum: 103c4506406ad94b442dd37f48e7e587
+  docVersion: 2.3.0
+  speakeasyVersion: 1.443.0
+  generationVersion: 2.461.4
+  releaseVersion: 0.1.1
+  configChecksum: 776376876028743353502f10b61c952d
+features:
+  go:
+    additionalDependencies: 0.1.0
+    constsAndDefaults: 0.1.6
+    core: 3.5.16
+    defaultEnabledRetries: 0.2.0
+    deprecations: 2.81.1
+    devContainers: 2.90.0
+    downloadStreams: 0.1.2
+    envVarSecurityUsage: 0.3.2
+    flattening: 2.81.1
+    globalSecurity: 2.82.10
+    globalSecurityCallbacks: 0.1.0
+    globalSecurityFlattening: 0.1.0
+    globalServerURLs: 2.82.2
+    groups: 2.81.2
+    intellisenseMarkdownSupport: 0.1.0
+    nameOverrides: 2.81.2
+    nullables: 0.1.0
+    responseFormat: 0.1.2
+    retries: 2.83.1
+    sdkHooks: 0.1.0
+    tests: 0.6.0
+    unions: 2.85.10
+    uploadStreams: 0.1.0
+generatedFiles:
+  - .devcontainer/README.md
+  - .devcontainer/devcontainer.json
+  - .devcontainer/setup.sh
+  - .gitattributes
+  - /models/apierrors/errorresponse.go
+  - /models/components/adduploadpartrequest.go
+  - /models/components/assistantobject.go
+  - /models/components/assistantsapiresponseformatoption.go
+  - /models/components/assistantsapitoolchoiceoption.go
+  - /models/components/assistantsnamedtoolchoice.go
+  - /models/components/assistanttoolscode.go
+  - /models/components/assistanttoolsfilesearch.go
+  - /models/components/assistanttoolsfilesearchtypeonly.go
+  - /models/components/assistanttoolsfunction.go
+  - /models/components/audioresponseformat.go
+  - /models/components/auditlog.go
+  - /models/components/auditlogactor.go
+  - /models/components/auditlogactorapikey.go
+  - /models/components/auditlogactorserviceaccount.go
+  - /models/components/auditlogactorsession.go
+  - /models/components/auditlogactoruser.go
+  - /models/components/auditlogeventtype.go
+  - /models/components/autochunkingstrategyrequestparam.go
+  - /models/components/batch.go
+  - /models/components/chatcompletionfunctioncalloption.go
+  - /models/components/chatcompletionfunctions.go
+  - /models/components/chatcompletionmessagetoolcall.go
+  - /models/components/chatcompletionmodalities.go
+  - /models/components/chatcompletionnamedtoolchoice.go
+  - /models/components/chatcompletionrequestassistantmessage.go
+  - /models/components/chatcompletionrequestassistantmessagecontentpart.go
+  - /models/components/chatcompletionrequestfunctionmessage.go
+  - /models/components/chatcompletionrequestmessage.go
+  - /models/components/chatcompletionrequestmessagecontentpartaudio.go
+  - /models/components/chatcompletionrequestmessagecontentpartimage.go
+  - /models/components/chatcompletionrequestmessagecontentpartrefusal.go
+  - /models/components/chatcompletionrequestmessagecontentparttext.go
+  - /models/components/chatcompletionrequestsystemmessage.go
+  - /models/components/chatcompletionrequestsystemmessagecontentpart.go
+  - /models/components/chatcompletionrequesttoolmessage.go
+  - /models/components/chatcompletionrequesttoolmessagecontentpart.go
+  - /models/components/chatcompletionrequestusermessage.go
+  - /models/components/chatcompletionrequestusermessagecontentpart.go
+  - /models/components/chatcompletionresponsemessage.go
+  - /models/components/chatcompletionstreamoptions.go
+  - /models/components/chatcompletiontokenlogprob.go
+  - /models/components/chatcompletiontool.go
+  - /models/components/chatcompletiontoolchoiceoption.go
+  - /models/components/chunkingstrategyrequestparam.go
+  - /models/components/completeuploadrequest.go
+  - /models/components/completionusage.go
+  - /models/components/createassistantrequest.go
+  - /models/components/createchatcompletionrequest.go
+  - /models/components/createchatcompletionresponse.go
+  - /models/components/createcompletionrequest.go
+  - /models/components/createcompletionresponse.go
+  - /models/components/createembeddingrequest.go
+  - /models/components/createembeddingresponse.go
+  - /models/components/createfilerequest.go
+  - /models/components/createfinetuningjobrequest.go
+  - /models/components/createimageeditrequest.go
+  - /models/components/createimagerequest.go
+  - /models/components/createimagevariationrequest.go
+  - /models/components/createmessagerequest.go
+  - /models/components/createmoderationrequest.go
+  - /models/components/createmoderationresponse.go
+  - /models/components/createrunrequest.go
+  - /models/components/createspeechrequest.go
+  - /models/components/createthreadandrunrequest.go
+  - /models/components/createthreadrequest.go
+  - /models/components/createtranscriptionrequest.go
+  - /models/components/createtranscriptionresponsejson.go
+  - /models/components/createtranscriptionresponseverbosejson.go
+  - /models/components/createtranslationrequest.go
+  - /models/components/createtranslationresponsejson.go
+  - /models/components/createtranslationresponseverbosejson.go
+  - /models/components/createuploadrequest.go
+  - /models/components/createvectorstorefilebatchrequest.go
+  - /models/components/createvectorstorefilerequest.go
+  - /models/components/createvectorstorerequest.go
+  - /models/components/deleteassistantresponse.go
+  - /models/components/deletefileresponse.go
+  - /models/components/deletemessageresponse.go
+  - /models/components/deletemodelresponse.go
+  - /models/components/deletethreadresponse.go
+  - /models/components/deletevectorstorefileresponse.go
+  - /models/components/deletevectorstoreresponse.go
+  - /models/components/embedding.go
+  - /models/components/error.go
+  - /models/components/filesearchrankingoptions.go
+  - /models/components/finetuningintegration.go
+  - /models/components/finetuningjob.go
+  - /models/components/finetuningjobcheckpoint.go
+  - /models/components/finetuningjobevent.go
+  - /models/components/functionobject.go
+  - /models/components/httpmetadata.go
+  - /models/components/image.go
+  - /models/components/imagesresponse.go
+  - /models/components/invite.go
+  - /models/components/invitedeleteresponse.go
+  - /models/components/invitelistresponse.go
+  - /models/components/inviterequest.go
+  - /models/components/listassistantsresponse.go
+  - /models/components/listauditlogsresponse.go
+  - /models/components/listbatchesresponse.go
+  - /models/components/listfilesresponse.go
+  - /models/components/listfinetuningjobcheckpointsresponse.go
+  - /models/components/listfinetuningjobeventsresponse.go
+  - /models/components/listmessagesresponse.go
+  - /models/components/listmodelsresponse.go
+  - /models/components/listpaginatedfinetuningjobsresponse.go
+  - /models/components/listrunsresponse.go
+  - /models/components/listrunstepsresponse.go
+  - /models/components/listvectorstorefilesresponse.go
+  - /models/components/listvectorstoresresponse.go
+  - /models/components/messagecontentimagefileobject.go
+  - /models/components/messagecontentimageurlobject.go
+  - /models/components/messagecontentrefusalobject.go
+  - /models/components/messagecontenttextannotationsfilecitationobject.go
+  - /models/components/messagecontenttextannotationsfilepathobject.go
+  - /models/components/messagecontenttextobject.go
+  - /models/components/messageobject.go
+  - /models/components/messagerequestcontenttextobject.go
+  - /models/components/model.go
+  - /models/components/modifyassistantrequest.go
+  - /models/components/modifymessagerequest.go
+  - /models/components/modifyrunrequest.go
+  - /models/components/modifythreadrequest.go
+  - /models/components/openaifile.go
+  - /models/components/otherchunkingstrategyresponseparam.go
+  - /models/components/project.go
+  - /models/components/projectapikey.go
+  - /models/components/projectapikeydeleteresponse.go
+  - /models/components/projectapikeylistresponse.go
+  - /models/components/projectcreaterequest.go
+  - /models/components/projectlistresponse.go
+  - /models/components/projectserviceaccount.go
+  - /models/components/projectserviceaccountapikey.go
+  - /models/components/projectserviceaccountcreaterequest.go
+  - /models/components/projectserviceaccountcreateresponse.go
+  - /models/components/projectserviceaccountdeleteresponse.go
+  - /models/components/projectserviceaccountlistresponse.go
+  - /models/components/projectupdaterequest.go
+  - /models/components/projectuser.go
+  - /models/components/projectusercreaterequest.go
+  - /models/components/projectuserdeleteresponse.go
+  - /models/components/projectuserlistresponse.go
+  - /models/components/projectuserupdaterequest.go
+  - /models/components/responseformatjsonobject.go
+  - /models/components/responseformatjsonschema.go
+  - /models/components/responseformattext.go
+  - /models/components/runcompletionusage.go
+  - /models/components/runobject.go
+  - /models/components/runstepcompletionusage.go
+  - /models/components/runstepdetailsmessagecreationobject.go
+  - /models/components/runstepdetailstoolcallscodeobject.go
+  - /models/components/runstepdetailstoolcallscodeoutputimageobject.go
+  - /models/components/runstepdetailstoolcallscodeoutputlogsobject.go
+  - /models/components/runstepdetailstoolcallsfilesearchobject.go
+  - /models/components/runstepdetailstoolcallsfilesearchrankingoptionsobject.go
+  - /models/components/runstepdetailstoolcallsfilesearchresultobject.go
+  - /models/components/runstepdetailstoolcallsfunctionobject.go
+  - /models/components/runstepdetailstoolcallsobject.go
+  - /models/components/runstepobject.go
+  - /models/components/runtoolcallobject.go
+  - /models/components/security.go
+  - /models/components/staticchunkingstrategy.go
+  - /models/components/staticchunkingstrategyrequestparam.go
+  - /models/components/staticchunkingstrategyresponseparam.go
+  - /models/components/submittooloutputsrunrequest.go
+  - /models/components/threadobject.go
+  - /models/components/transcriptionsegment.go
+  - /models/components/transcriptionword.go
+  - /models/components/truncationobject.go
+  - /models/components/updatevectorstorerequest.go
+  - /models/components/upload.go
+  - /models/components/uploadpart.go
+  - /models/components/user.go
+  - /models/components/userdeleteresponse.go
+  - /models/components/userlistresponse.go
+  - /models/components/userroleupdaterequest.go
+  - /models/components/vectorstoreexpirationafter.go
+  - /models/components/vectorstorefilebatchobject.go
+  - /models/components/vectorstorefileobject.go
+  - /models/components/vectorstoreobject.go
+  - /models/operations/adduploadpart.go
+  - /models/operations/archiveproject.go
+  - /models/operations/cancelbatch.go
+  - /models/operations/cancelfinetuningjob.go
+  - /models/operations/cancelrun.go
+  - /models/operations/cancelupload.go
+  - /models/operations/cancelvectorstorefilebatch.go
+  - /models/operations/completeupload.go
+  - /models/operations/createassistant.go
+  - /models/operations/createbatch.go
+  - /models/operations/createchatcompletion.go
+  - /models/operations/createcompletion.go
+  - /models/operations/createembedding.go
+  - /models/operations/createfile.go
+  - /models/operations/createfinetuningjob.go
+  - /models/operations/createimage.go
+  - /models/operations/createimageedit.go
+  - /models/operations/createimagevariation.go
+  - /models/operations/createmessage.go
+  - /models/operations/createmoderation.go
+  - /models/operations/createproject.go
+  - /models/operations/createprojectserviceaccount.go
+  - /models/operations/createprojectuser.go
+  - /models/operations/createrun.go
+  - /models/operations/createspeech.go
+  - /models/operations/createthread.go
+  - /models/operations/createthreadandrun.go
+  - /models/operations/createtranscription.go
+  - /models/operations/createtranslation.go
+  - /models/operations/createupload.go
+  - /models/operations/createvectorstore.go
+  - /models/operations/createvectorstorefile.go
+  - /models/operations/createvectorstorefilebatch.go
+  - /models/operations/deleteassistant.go
+  - /models/operations/deletefile.go
+  - /models/operations/deleteinvite.go
+  - /models/operations/deletemessage.go
+  - /models/operations/deletemodel.go
+  - /models/operations/deleteprojectapikey.go
+  - /models/operations/deleteprojectserviceaccount.go
+  - /models/operations/deleteprojectuser.go
+  - /models/operations/deletethread.go
+  - /models/operations/deleteuser.go
+  - /models/operations/deletevectorstore.go
+  - /models/operations/deletevectorstorefile.go
+  - /models/operations/downloadfile.go
+  - /models/operations/getassistant.go
+  - /models/operations/getmessage.go
+  - /models/operations/getrun.go
+  - /models/operations/getrunstep.go
+  - /models/operations/getthread.go
+  - /models/operations/getvectorstore.go
+  - /models/operations/getvectorstorefile.go
+  - /models/operations/getvectorstorefilebatch.go
+  - /models/operations/inviteuser.go
+  - /models/operations/listassistants.go
+  - /models/operations/listauditlogs.go
+  - /models/operations/listbatches.go
+  - /models/operations/listfiles.go
+  - /models/operations/listfilesinvectorstorebatch.go
+  - /models/operations/listfinetuningevents.go
+  - /models/operations/listfinetuningjobcheckpoints.go
+  - /models/operations/listinvites.go
+  - /models/operations/listmessages.go
+  - /models/operations/listmodels.go
+  - /models/operations/listpaginatedfinetuningjobs.go
+  - /models/operations/listprojectapikeys.go
+  - /models/operations/listprojects.go
+  - /models/operations/listprojectserviceaccounts.go
+  - /models/operations/listprojectusers.go
+  - /models/operations/listruns.go
+  - /models/operations/listrunsteps.go
+  - /models/operations/listusers.go
+  - /models/operations/listvectorstorefiles.go
+  - /models/operations/listvectorstores.go
+  - /models/operations/modifyassistant.go
+  - /models/operations/modifymessage.go
+  - /models/operations/modifyproject.go
+  - /models/operations/modifyprojectuser.go
+  - /models/operations/modifyrun.go
+  - /models/operations/modifythread.go
+  - /models/operations/modifyuser.go
+  - /models/operations/modifyvectorstore.go
+  - /models/operations/retrievebatch.go
+  - /models/operations/retrievefile.go
+  - /models/operations/retrievefinetuningjob.go
+  - /models/operations/retrieveinvite.go
+  - /models/operations/retrievemodel.go
+  - /models/operations/retrieveproject.go
+  - /models/operations/retrieveprojectapikey.go
+  - /models/operations/retrieveprojectserviceaccount.go
+  - /models/operations/retrieveprojectuser.go
+  - /models/operations/retrieveuser.go
+  - /models/operations/submittoolouputstorun.go
+  - CONTRIBUTING.md
+  - USAGE.md
+  - assistants.go
+  - audio.go
+  - auditlogs.go
+  - batch.go
+  - batches.go
+  - chat.go
+  - completions.go
+  - docs/models/apierrors/errorresponse.md
+  - docs/models/components/adduploadpartrequest.md
+  - docs/models/components/anchor.md
+  - docs/models/components/annotations.md
+  - docs/models/components/apikeycreated.md
+  - docs/models/components/apikeydeleted.md
+  - docs/models/components/apikeyupdated.md
+  - docs/models/components/assistantobject.md
+  - docs/models/components/assistantobjectcodeinterpreter.md
+  - docs/models/components/assistantobjectfilesearch.md
+  - docs/models/components/assistantsapiresponseformatoption.md
+  - docs/models/components/assistantsapiresponseformatoption1.md
+  - docs/models/components/assistantsapitoolchoiceoption.md
+  - docs/models/components/assistantsapitoolchoiceoption1.md
+  - docs/models/components/assistantsnamedtoolchoice.md
+  - docs/models/components/assistantsnamedtoolchoicefunction.md
+  - docs/models/components/assistantsnamedtoolchoicetype.md
+  - docs/models/components/assistanttoolscode.md
+  - docs/models/components/assistanttoolsfilesearch.md
+  - docs/models/components/assistanttoolsfilesearchtype.md
+  - docs/models/components/assistanttoolsfilesearchtypeonly.md
+  - docs/models/components/assistanttoolsfilesearchtypeonlytype.md
+  - docs/models/components/assistanttoolsfunction.md
+  - docs/models/components/assistanttoolsfunctiontype.md
+  - docs/models/components/attachments.md
+  - docs/models/components/audio.md
+  - docs/models/components/audioresponseformat.md
+  - docs/models/components/auditlog.md
+  - docs/models/components/auditlogactor.md
+  - docs/models/components/auditlogactorapikey.md
+  - docs/models/components/auditlogactorapikeytype.md
+  - docs/models/components/auditlogactorserviceaccount.md
+  - docs/models/components/auditlogactorsession.md
+  - docs/models/components/auditlogactortype.md
+  - docs/models/components/auditlogactoruser.md
+  - docs/models/components/auditlogchangesrequested.md
+  - docs/models/components/auditlogdata.md
+  - docs/models/components/auditlogeventtype.md
+  - docs/models/components/auditloginvitesentdata.md
+  - docs/models/components/auditlogproject.md
+  - docs/models/components/auditlogprojectcreateddata.md
+  - docs/models/components/auditlogprojectupdatedchangesrequested.md
+  - docs/models/components/auditlogserviceaccountcreateddata.md
+  - docs/models/components/auditlogserviceaccountupdatedchangesrequested.md
+  - docs/models/components/auditloguseraddeddata.md
+  - docs/models/components/auditloguserupdatedchangesrequested.md
+  - docs/models/components/autochunkingstrategy.md
+  - docs/models/components/autochunkingstrategyrequestparam.md
+  - docs/models/components/autochunkingstrategyrequestparamtype.md
+  - docs/models/components/batch.md
+  - docs/models/components/batchdata.md
+  - docs/models/components/batchmetadata.md
+  - docs/models/components/batchobject.md
+  - docs/models/components/batchsize.md
+  - docs/models/components/batchsize1.md
+  - docs/models/components/categories.md
+  - docs/models/components/categoryappliedinputtypes.md
+  - docs/models/components/categoryscores.md
+  - docs/models/components/changesrequested.md
+  - docs/models/components/chatcompletionfunctioncalloption.md
+  - docs/models/components/chatcompletionfunctions.md
+  - docs/models/components/chatcompletionmessagetoolcall.md
+  - docs/models/components/chatcompletionmessagetoolcalltype.md
+  - docs/models/components/chatcompletionmodalities.md
+  - docs/models/components/chatcompletionnamedtoolchoice.md
+  - docs/models/components/chatcompletionnamedtoolchoicefunction.md
+  - docs/models/components/chatcompletionnamedtoolchoicetype.md
+  - docs/models/components/chatcompletionrequestassistantmessage.md
+  - docs/models/components/chatcompletionrequestassistantmessagecontent.md
+  - docs/models/components/chatcompletionrequestassistantmessagecontentpart.md
+  - docs/models/components/chatcompletionrequestassistantmessagerole.md
+  - docs/models/components/chatcompletionrequestfunctionmessage.md
+  - docs/models/components/chatcompletionrequestfunctionmessagerole.md
+  - docs/models/components/chatcompletionrequestmessage.md
+  - docs/models/components/chatcompletionrequestmessagecontentpartaudio.md
+  - docs/models/components/chatcompletionrequestmessagecontentpartaudiotype.md
+  - docs/models/components/chatcompletionrequestmessagecontentpartimage.md
+  - docs/models/components/chatcompletionrequestmessagecontentpartimagetype.md
+  - docs/models/components/chatcompletionrequestmessagecontentpartrefusal.md
+  - docs/models/components/chatcompletionrequestmessagecontentpartrefusaltype.md
+  - docs/models/components/chatcompletionrequestmessagecontentparttext.md
+  - docs/models/components/chatcompletionrequestmessagecontentparttexttype.md
+  - docs/models/components/chatcompletionrequestsystemmessage.md
+  - docs/models/components/chatcompletionrequestsystemmessagecontentpart.md
+  - docs/models/components/chatcompletionrequesttoolmessage.md
+  - docs/models/components/chatcompletionrequesttoolmessagecontent.md
+  - docs/models/components/chatcompletionrequesttoolmessagecontentpart.md
+  - docs/models/components/chatcompletionrequesttoolmessagerole.md
+  - docs/models/components/chatcompletionrequestusermessage.md
+  - docs/models/components/chatcompletionrequestusermessagecontent.md
+  - docs/models/components/chatcompletionrequestusermessagecontentpart.md
+  - docs/models/components/chatcompletionrequestusermessagerole.md
+  - docs/models/components/chatcompletionresponsemessage.md
+  - docs/models/components/chatcompletionresponsemessageaudio.md
+  - docs/models/components/chatcompletionresponsemessagefunctioncall.md
+  - docs/models/components/chatcompletionresponsemessagerole.md
+  - docs/models/components/chatcompletionstreamoptions.md
+  - docs/models/components/chatcompletiontokenlogprob.md
+  - docs/models/components/chatcompletiontool.md
+  - docs/models/components/chatcompletiontoolchoiceoption.md
+  - docs/models/components/chatcompletiontoolchoiceoption1.md
+  - docs/models/components/chatcompletiontooltype.md
+  - docs/models/components/choices.md
+  - docs/models/components/chunkingstrategy.md
+  - docs/models/components/chunkingstrategyautochunkingstrategy.md
+  - docs/models/components/chunkingstrategyrequestparam.md
+  - docs/models/components/chunkingstrategystatic.md
+  - docs/models/components/chunkingstrategystaticchunkingstrategy.md
+  - docs/models/components/chunkingstrategytype.md
+  - docs/models/components/code.md
+  - docs/models/components/codeinterpreter.md
+  - docs/models/components/completeuploadrequest.md
+  - docs/models/components/completiontokensdetails.md
+  - docs/models/components/completionusage.md
+  - docs/models/components/content.md
+  - docs/models/components/content2.md
+  - docs/models/components/createassistantrequest.md
+  - docs/models/components/createassistantrequestchunkingstrategystaticchunkingstrategy.md
+  - docs/models/components/createassistantrequestchunkingstrategytoolresourcesfilesearchtype.md
+  - docs/models/components/createassistantrequestchunkingstrategytoolresourcestype.md
+  - docs/models/components/createassistantrequestchunkingstrategytype.md
+  - docs/models/components/createassistantrequestcodeinterpreter.md
+  - docs/models/components/createassistantrequestfilesearch.md
+  - docs/models/components/createassistantrequestfilesearchchunkingstrategy.md
+  - docs/models/components/createassistantrequestfilesearchmetadata.md
+  - docs/models/components/createassistantrequestmetadata.md
+  - docs/models/components/createassistantrequestmodel.md
+  - docs/models/components/createassistantrequesttoolresources.md
+  - docs/models/components/createassistantrequesttools.md
+  - docs/models/components/createchatcompletionrequest.md
+  - docs/models/components/createchatcompletionrequestaudio.md
+  - docs/models/components/createchatcompletionrequestformat.md
+  - docs/models/components/createchatcompletionrequestfunctioncall.md
+  - docs/models/components/createchatcompletionrequestmodel.md
+  - docs/models/components/createchatcompletionrequestmodel2.md
+  - docs/models/components/createchatcompletionrequestresponseformat.md
+  - docs/models/components/createchatcompletionrequestvoice.md
+  - docs/models/components/createchatcompletionresponse.md
+  - docs/models/components/createchatcompletionresponseobject.md
+  - docs/models/components/createchatcompletionresponseservicetier.md
+  - docs/models/components/createcompletionrequest.md
+  - docs/models/components/createcompletionrequestmodel.md
+  - docs/models/components/createcompletionrequestmodel2.md
+  - docs/models/components/createcompletionrequeststop.md
+  - docs/models/components/createcompletionresponse.md
+  - docs/models/components/createcompletionresponsechoices.md
+  - docs/models/components/createcompletionresponsefinishreason.md
+  - docs/models/components/createcompletionresponselogprobs.md
+  - docs/models/components/createcompletionresponseobject.md
+  - docs/models/components/createembeddingrequest.md
+  - docs/models/components/createembeddingrequestmodel.md
+  - docs/models/components/createembeddingrequestmodel2.md
+  - docs/models/components/createembeddingresponse.md
+  - docs/models/components/createembeddingresponseobject.md
+  - docs/models/components/createfilerequest.md
+  - docs/models/components/createfilerequestfile.md
+  - docs/models/components/createfilerequestpurpose.md
+  - docs/models/components/createfinetuningjobrequest.md
+  - docs/models/components/createfinetuningjobrequestmodel.md
+  - docs/models/components/createfinetuningjobrequestmodel2.md
+  - docs/models/components/createfinetuningjobrequesttype.md
+  - docs/models/components/createfinetuningjobrequestwandb.md
+  - docs/models/components/createimageeditrequest.md
+  - docs/models/components/createimageeditrequestimage.md
+  - docs/models/components/createimageeditrequestmodel.md
+  - docs/models/components/createimageeditrequestmodel2.md
+  - docs/models/components/createimageeditrequestresponseformat.md
+  - docs/models/components/createimagerequest.md
+  - docs/models/components/createimagerequestmodel.md
+  - docs/models/components/createimagerequestmodel2.md
+  - docs/models/components/createimagerequestresponseformat.md
+  - docs/models/components/createimagerequestsize.md
+  - docs/models/components/createimagevariationrequest.md
+  - docs/models/components/createimagevariationrequestimage.md
+  - docs/models/components/createimagevariationrequestmodel.md
+  - docs/models/components/createimagevariationrequestmodel2.md
+  - docs/models/components/createimagevariationrequestresponseformat.md
+  - docs/models/components/createimagevariationrequestsize.md
+  - docs/models/components/createmessagerequest.md
+  - docs/models/components/createmessagerequestcontent.md
+  - docs/models/components/createmessagerequestmetadata.md
+  - docs/models/components/createmessagerequestrole.md
+  - docs/models/components/createmessagerequesttools.md
+  - docs/models/components/createmoderationrequest.md
+  - docs/models/components/createmoderationrequest3type.md
+  - docs/models/components/createmoderationrequestinput.md
+  - docs/models/components/createmoderationrequestmodel.md
+  - docs/models/components/createmoderationrequestmodel2.md
+  - docs/models/components/createmoderationresponse.md
+  - docs/models/components/createrunrequest.md
+  - docs/models/components/createrunrequestmetadata.md
+  - docs/models/components/createrunrequestmodel.md
+  - docs/models/components/createrunrequestmodel2.md
+  - docs/models/components/createrunrequesttools.md
+  - docs/models/components/createspeechrequest.md
+  - docs/models/components/createspeechrequestmodel.md
+  - docs/models/components/createthreadandrunrequest.md
+  - docs/models/components/createthreadandrunrequestcodeinterpreter.md
+  - docs/models/components/createthreadandrunrequestfilesearch.md
+  - docs/models/components/createthreadandrunrequestmetadata.md
+  - docs/models/components/createthreadandrunrequestmodel.md
+  - docs/models/components/createthreadandrunrequestmodel2.md
+  - docs/models/components/createthreadandrunrequesttoolresources.md
+  - docs/models/components/createthreadandrunrequesttools.md
+  - docs/models/components/createthreadrequest.md
+  - docs/models/components/createthreadrequestchunkingstrategyautochunkingstrategy.md
+  - docs/models/components/createthreadrequestchunkingstrategystatic.md
+  - docs/models/components/createthreadrequestchunkingstrategystaticchunkingstrategy.md
+  - docs/models/components/createthreadrequestchunkingstrategytoolresourcesautochunkingstrategy.md
+  - docs/models/components/createthreadrequestchunkingstrategytoolresourcesfilesearch2type.md
+  - docs/models/components/createthreadrequestchunkingstrategytoolresourcesfilesearchtype.md
+  - docs/models/components/createthreadrequestchunkingstrategytoolresourcesstatic.md
+  - docs/models/components/createthreadrequestchunkingstrategytoolresourcesstaticchunkingstrategy.md
+  - docs/models/components/createthreadrequestchunkingstrategytoolresourcestype.md
+  - docs/models/components/createthreadrequestchunkingstrategytype.md
+  - docs/models/components/createthreadrequestcodeinterpreter.md
+  - docs/models/components/createthreadrequestfilesearch.md
+  - docs/models/components/createthreadrequestfilesearch1.md
+  - docs/models/components/createthreadrequestfilesearch2.md
+  - docs/models/components/createthreadrequestfilesearchchunkingstrategy.md
+  - docs/models/components/createthreadrequestfilesearchmetadata.md
+  - docs/models/components/createthreadrequestfilesearchtoolresourceschunkingstrategy.md
+  - docs/models/components/createthreadrequestfilesearchtoolresourcesmetadata.md
+  - docs/models/components/createthreadrequestfilesearchtoolresourcesvectorstores.md
+  - docs/models/components/createthreadrequestfilesearchvectorstores.md
+  - docs/models/components/createthreadrequestmetadata.md
+  - docs/models/components/createthreadrequesttoolresources.md
+  - docs/models/components/createtranscriptionrequest.md
+  - docs/models/components/createtranscriptionrequestmodel.md
+  - docs/models/components/createtranscriptionrequestmodel2.md
+  - docs/models/components/createtranscriptionresponsejson.md
+  - docs/models/components/createtranscriptionresponseverbosejson.md
+  - docs/models/components/createtranslationrequest.md
+  - docs/models/components/createtranslationrequestfile.md
+  - docs/models/components/createtranslationrequestmodel.md
+  - docs/models/components/createtranslationrequestmodel2.md
+  - docs/models/components/createtranslationresponsejson.md
+  - docs/models/components/createtranslationresponseverbosejson.md
+  - docs/models/components/createuploadrequest.md
+  - docs/models/components/createuploadrequestpurpose.md
+  - docs/models/components/createvectorstorefilebatchrequest.md
+  - docs/models/components/createvectorstorefilerequest.md
+  - docs/models/components/createvectorstorerequest.md
+  - docs/models/components/createvectorstorerequestmetadata.md
+  - docs/models/components/data.md
+  - docs/models/components/deleteassistantresponse.md
+  - docs/models/components/deleteassistantresponseobject.md
+  - docs/models/components/deletefileresponse.md
+  - docs/models/components/deletefileresponseobject.md
+  - docs/models/components/deletemessageresponse.md
+  - docs/models/components/deletemessageresponseobject.md
+  - docs/models/components/deletemodelresponse.md
+  - docs/models/components/deletethreadresponse.md
+  - docs/models/components/deletethreadresponseobject.md
+  - docs/models/components/deletevectorstorefileresponse.md
+  - docs/models/components/deletevectorstorefileresponseobject.md
+  - docs/models/components/deletevectorstoreresponse.md
+  - docs/models/components/deletevectorstoreresponseobject.md
+  - docs/models/components/detail.md
+  - docs/models/components/embedding.md
+  - docs/models/components/embeddingobject.md
+  - docs/models/components/encodingformat.md
+  - docs/models/components/error.md
+  - docs/models/components/errors.md
+  - docs/models/components/file.md
+  - docs/models/components/filecitation.md
+  - docs/models/components/filecounts.md
+  - docs/models/components/filepath.md
+  - docs/models/components/filesearch.md
+  - docs/models/components/filesearch1.md
+  - docs/models/components/filesearch2.md
+  - docs/models/components/filesearchchunkingstrategy.md
+  - docs/models/components/filesearchmetadata.md
+  - docs/models/components/filesearchrankingoptions.md
+  - docs/models/components/filesearchvectorstores.md
+  - docs/models/components/finetuningintegration.md
+  - docs/models/components/finetuningintegrationtype.md
+  - docs/models/components/finetuningjob.md
+  - docs/models/components/finetuningjobcheckpoint.md
+  - docs/models/components/finetuningjobcheckpointobject.md
+  - docs/models/components/finetuningjoberror.md
+  - docs/models/components/finetuningjobevent.md
+  - docs/models/components/finetuningjobeventobject.md
+  - docs/models/components/finetuningjobhyperparameters.md
+  - docs/models/components/finetuningjobintegrations.md
+  - docs/models/components/finetuningjobnepochs.md
+  - docs/models/components/finetuningjobnepochs1.md
+  - docs/models/components/finetuningjobobject.md
+  - docs/models/components/finetuningjobstatus.md
+  - docs/models/components/finishreason.md
+  - docs/models/components/format.md
+  - docs/models/components/function.md
+  - docs/models/components/functioncall.md
+  - docs/models/components/functionobject.md
+  - docs/models/components/harassment.md
+  - docs/models/components/harassmentthreatening.md
+  - docs/models/components/hate.md
+  - docs/models/components/hatethreatening.md
+  - docs/models/components/httpmetadata.md
+  - docs/models/components/hyperparameters.md
+  - docs/models/components/illicit.md
+  - docs/models/components/illicitviolent.md
+  - docs/models/components/image.md
+  - docs/models/components/imagefile.md
+  - docs/models/components/imagesresponse.md
+  - docs/models/components/imageurl.md
+  - docs/models/components/incompletedetails.md
+  - docs/models/components/input.md
+  - docs/models/components/inputaudio.md
+  - docs/models/components/integrations.md
+  - docs/models/components/invite.md
+  - docs/models/components/inviteaccepted.md
+  - docs/models/components/invitedeleted.md
+  - docs/models/components/invitedeleteresponse.md
+  - docs/models/components/invitedeleteresponseobject.md
+  - docs/models/components/invitelistresponse.md
+  - docs/models/components/invitelistresponseobject.md
+  - docs/models/components/inviteobject.md
+  - docs/models/components/inviterequest.md
+  - docs/models/components/inviterequestrole.md
+  - docs/models/components/inviterole.md
+  - docs/models/components/invitesent.md
+  - docs/models/components/invitestatus.md
+  - docs/models/components/jsonschema.md
+  - docs/models/components/lasterror.md
+  - docs/models/components/learningratemultiplier.md
+  - docs/models/components/learningratemultiplier1.md
+  - docs/models/components/level.md
+  - docs/models/components/listassistantsresponse.md
+  - docs/models/components/listauditlogsresponse.md
+  - docs/models/components/listauditlogsresponseobject.md
+  - docs/models/components/listbatchesresponse.md
+  - docs/models/components/listbatchesresponseobject.md
+  - docs/models/components/listfilesresponse.md
+  - docs/models/components/listfinetuningjobcheckpointsresponse.md
+  - docs/models/components/listfinetuningjobcheckpointsresponseobject.md
+  - docs/models/components/listfinetuningjobeventsresponse.md
+  - docs/models/components/listfinetuningjobeventsresponseobject.md
+  - docs/models/components/listmessagesresponse.md
+  - docs/models/components/listmodelsresponse.md
+  - docs/models/components/listmodelsresponseobject.md
+  - docs/models/components/listpaginatedfinetuningjobsresponse.md
+  - docs/models/components/listpaginatedfinetuningjobsresponseobject.md
+  - docs/models/components/listrunsresponse.md
+  - docs/models/components/listrunstepsresponse.md
+  - docs/models/components/listvectorstorefilesresponse.md
+  - docs/models/components/listvectorstoresresponse.md
+  - docs/models/components/loginfailed.md
+  - docs/models/components/logoutfailed.md
+  - docs/models/components/logprobs.md
+  - docs/models/components/mask.md
+  - docs/models/components/messagecontentimagefileobject.md
+  - docs/models/components/messagecontentimagefileobjectdetail.md
+  - docs/models/components/messagecontentimagefileobjecttype.md
+  - docs/models/components/messagecontentimageurlobject.md
+  - docs/models/components/messagecontentimageurlobjectdetail.md
+  - docs/models/components/messagecontentimageurlobjectimageurl.md
+  - docs/models/components/messagecontentimageurlobjecttype.md
+  - docs/models/components/messagecontentrefusalobject.md
+  - docs/models/components/messagecontentrefusalobjecttype.md
+  - docs/models/components/messagecontenttextannotationsfilecitationobject.md
+  - docs/models/components/messagecontenttextannotationsfilecitationobjecttype.md
+  - docs/models/components/messagecontenttextannotationsfilepathobject.md
+  - docs/models/components/messagecontenttextannotationsfilepathobjecttype.md
+  - docs/models/components/messagecontenttextobject.md
+  - docs/models/components/messagecontenttextobjecttype.md
+  - docs/models/components/messagecreation.md
+  - docs/models/components/messageobject.md
+  - docs/models/components/messageobjectattachments.md
+  - docs/models/components/messageobjectcontent.md
+  - docs/models/components/messageobjectincompletedetails.md
+  - docs/models/components/messageobjectmetadata.md
+  - docs/models/components/messageobjectobject.md
+  - docs/models/components/messageobjectreason.md
+  - docs/models/components/messageobjectrole.md
+  - docs/models/components/messageobjectstatus.md
+  - docs/models/components/messageobjecttools.md
+  - docs/models/components/messagerequestcontenttextobject.md
+  - docs/models/components/messagerequestcontenttextobjecttype.md
+  - docs/models/components/metadata.md
+  - docs/models/components/metrics.md
+  - docs/models/components/model.md
+  - docs/models/components/model2.md
+  - docs/models/components/modelobject.md
+  - docs/models/components/modifyassistantrequest.md
+  - docs/models/components/modifyassistantrequestcodeinterpreter.md
+  - docs/models/components/modifyassistantrequestfilesearch.md
+  - docs/models/components/modifyassistantrequestmetadata.md
+  - docs/models/components/modifyassistantrequesttoolresources.md
+  - docs/models/components/modifyassistantrequesttools.md
+  - docs/models/components/modifymessagerequest.md
+  - docs/models/components/modifymessagerequestmetadata.md
+  - docs/models/components/modifyrunrequest.md
+  - docs/models/components/modifyrunrequestmetadata.md
+  - docs/models/components/modifythreadrequest.md
+  - docs/models/components/modifythreadrequestcodeinterpreter.md
+  - docs/models/components/modifythreadrequestfilesearch.md
+  - docs/models/components/modifythreadrequestmetadata.md
+  - docs/models/components/modifythreadrequesttoolresources.md
+  - docs/models/components/nepochs.md
+  - docs/models/components/nepochs1.md
+  - docs/models/components/object.md
+  - docs/models/components/one.md
+  - docs/models/components/openaifile.md
+  - docs/models/components/openaifileobject.md
+  - docs/models/components/openaifilestatus.md
+  - docs/models/components/organizationupdated.md
+  - docs/models/components/otherchunkingstrategyresponseparam.md
+  - docs/models/components/otherchunkingstrategyresponseparamtype.md
+  - docs/models/components/outputs.md
+  - docs/models/components/owner.md
+  - docs/models/components/prediction.md
+  - docs/models/components/predictioncontent.md
+  - docs/models/components/predictiontype.md
+  - docs/models/components/project.md
+  - docs/models/components/projectapikey.md
+  - docs/models/components/projectapikeydeleteresponse.md
+  - docs/models/components/projectapikeydeleteresponseobject.md
+  - docs/models/components/projectapikeylistresponse.md
+  - docs/models/components/projectapikeylistresponseobject.md
+  - docs/models/components/projectapikeyobject.md
+  - docs/models/components/projectapikeytype.md
+  - docs/models/components/projectarchived.md
+  - docs/models/components/projectcreated.md
+  - docs/models/components/projectcreaterequest.md
+  - docs/models/components/projectlistresponse.md
+  - docs/models/components/projectlistresponseobject.md
+  - docs/models/components/projectobject.md
+  - docs/models/components/projectserviceaccount.md
+  - docs/models/components/projectserviceaccountapikey.md
+  - docs/models/components/projectserviceaccountapikeyobject.md
+  - docs/models/components/projectserviceaccountcreaterequest.md
+  - docs/models/components/projectserviceaccountcreateresponse.md
+  - docs/models/components/projectserviceaccountcreateresponseobject.md
+  - docs/models/components/projectserviceaccountcreateresponserole.md
+  - docs/models/components/projectserviceaccountdeleteresponse.md
+  - docs/models/components/projectserviceaccountdeleteresponseobject.md
+  - docs/models/components/projectserviceaccountlistresponse.md
+  - docs/models/components/projectserviceaccountlistresponseobject.md
+  - docs/models/components/projectserviceaccountobject.md
+  - docs/models/components/projectserviceaccountrole.md
+  - docs/models/components/projectstatus.md
+  - docs/models/components/projectupdated.md
+  - docs/models/components/projectupdaterequest.md
+  - docs/models/components/projectuser.md
+  - docs/models/components/projectusercreaterequest.md
+  - docs/models/components/projectusercreaterequestrole.md
+  - docs/models/components/projectuserdeleteresponse.md
+  - docs/models/components/projectuserdeleteresponseobject.md
+  - docs/models/components/projectuserlistresponse.md
+  - docs/models/components/projectuserobject.md
+  - docs/models/components/projectuserrole.md
+  - docs/models/components/projectuserupdaterequest.md
+  - docs/models/components/projectuserupdaterequestrole.md
+  - docs/models/components/prompt.md
+  - docs/models/components/prompttokensdetails.md
+  - docs/models/components/purpose.md
+  - docs/models/components/quality.md
+  - docs/models/components/ranker.md
+  - docs/models/components/reason.md
+  - docs/models/components/requestcounts.md
+  - docs/models/components/requiredaction.md
+  - docs/models/components/responseformat.md
+  - docs/models/components/responseformatjsonobject.md
+  - docs/models/components/responseformatjsonobjecttype.md
+  - docs/models/components/responseformatjsonschema.md
+  - docs/models/components/responseformatjsonschematype.md
+  - docs/models/components/responseformattext.md
+  - docs/models/components/responseformattexttype.md
+  - docs/models/components/results.md
+  - docs/models/components/role.md
+  - docs/models/components/runcompletionusage.md
+  - docs/models/components/runobject.md
+  - docs/models/components/runobjectmetadata.md
+  - docs/models/components/runobjectobject.md
+  - docs/models/components/runobjectstatus.md
+  - docs/models/components/runobjecttools.md
+  - docs/models/components/runobjecttype.md
+  - docs/models/components/runstepcompletionusage.md
+  - docs/models/components/runstepdetailsmessagecreationobject.md
+  - docs/models/components/runstepdetailsmessagecreationobjecttype.md
+  - docs/models/components/runstepdetailstoolcallscodeobject.md
+  - docs/models/components/runstepdetailstoolcallscodeobjecttype.md
+  - docs/models/components/runstepdetailstoolcallscodeoutputimageobject.md
+  - docs/models/components/runstepdetailstoolcallscodeoutputimageobjectimage.md
+  - docs/models/components/runstepdetailstoolcallscodeoutputimageobjecttype.md
+  - docs/models/components/runstepdetailstoolcallscodeoutputlogsobject.md
+  - docs/models/components/runstepdetailstoolcallscodeoutputlogsobjecttype.md
+  - docs/models/components/runstepdetailstoolcallsfilesearchobject.md
+  - docs/models/components/runstepdetailstoolcallsfilesearchobjectfilesearch.md
+  - docs/models/components/runstepdetailstoolcallsfilesearchobjecttype.md
+  - docs/models/components/runstepdetailstoolcallsfilesearchrankingoptionsobject.md
+  - docs/models/components/runstepdetailstoolcallsfilesearchrankingoptionsobjectranker.md
+  - docs/models/components/runstepdetailstoolcallsfilesearchresultobject.md
+  - docs/models/components/runstepdetailstoolcallsfilesearchresultobjectcontent.md
+  - docs/models/components/runstepdetailstoolcallsfilesearchresultobjecttype.md
+  - docs/models/components/runstepdetailstoolcallsfunctionobject.md
+  - docs/models/components/runstepdetailstoolcallsfunctionobjectfunction.md
+  - docs/models/components/runstepdetailstoolcallsfunctionobjecttype.md
+  - docs/models/components/runstepdetailstoolcallsobject.md
+  - docs/models/components/runstepdetailstoolcallsobjecttype.md
+  - docs/models/components/runstepobject.md
+  - docs/models/components/runstepobjectcode.md
+  - docs/models/components/runstepobjectlasterror.md
+  - docs/models/components/runstepobjectmetadata.md
+  - docs/models/components/runstepobjectobject.md
+  - docs/models/components/runstepobjectstatus.md
+  - docs/models/components/runstepobjecttype.md
+  - docs/models/components/runtoolcallobject.md
+  - docs/models/components/runtoolcallobjectfunction.md
+  - docs/models/components/runtoolcallobjecttype.md
+  - docs/models/components/security.md
+  - docs/models/components/selfharm.md
+  - docs/models/components/selfharminstructions.md
+  - docs/models/components/selfharmintent.md
+  - docs/models/components/serviceaccountcreated.md
+  - docs/models/components/serviceaccountdeleted.md
+  - docs/models/components/serviceaccountupdated.md
+  - docs/models/components/servicetier.md
+  - docs/models/components/settings.md
+  - docs/models/components/sexual.md
+  - docs/models/components/sexualminors.md
+  - docs/models/components/size.md
+  - docs/models/components/static.md
+  - docs/models/components/staticchunkingstrategy.md
+  - docs/models/components/staticchunkingstrategyrequestparam.md
+  - docs/models/components/staticchunkingstrategyrequestparamtype.md
+  - docs/models/components/staticchunkingstrategyresponseparam.md
+  - docs/models/components/staticchunkingstrategyresponseparamtype.md
+  - docs/models/components/staticcontent.md
+  - docs/models/components/status.md
+  - docs/models/components/stepdetails.md
+  - docs/models/components/stop.md
+  - docs/models/components/style.md
+  - docs/models/components/submittooloutputs.md
+  - docs/models/components/submittooloutputsrunrequest.md
+  - docs/models/components/text.md
+  - docs/models/components/threadobject.md
+  - docs/models/components/threadobjectcodeinterpreter.md
+  - docs/models/components/threadobjectfilesearch.md
+  - docs/models/components/threadobjectmetadata.md
+  - docs/models/components/threadobjectobject.md
+  - docs/models/components/threadobjecttoolresources.md
+  - docs/models/components/three.md
+  - docs/models/components/three1.md
+  - docs/models/components/three2.md
+  - docs/models/components/threeimageurl.md
+  - docs/models/components/threetype.md
+  - docs/models/components/timestampgranularities.md
+  - docs/models/components/toolcalls.md
+  - docs/models/components/tooloutputs.md
+  - docs/models/components/toolresources.md
+  - docs/models/components/tools.md
+  - docs/models/components/toplogprobs.md
+  - docs/models/components/transcriptionsegment.md
+  - docs/models/components/transcriptionword.md
+  - docs/models/components/truncationobject.md
+  - docs/models/components/truncationobjecttype.md
+  - docs/models/components/two.md
+  - docs/models/components/type.md
+  - docs/models/components/type1.md
+  - docs/models/components/updatevectorstorerequest.md
+  - docs/models/components/updatevectorstorerequestmetadata.md
+  - docs/models/components/upload.md
+  - docs/models/components/uploadobject.md
+  - docs/models/components/uploadpart.md
+  - docs/models/components/uploadpartobject.md
+  - docs/models/components/uploadstatus.md
+  - docs/models/components/usage.md
+  - docs/models/components/user.md
+  - docs/models/components/useradded.md
+  - docs/models/components/userdeleted.md
+  - docs/models/components/userdeleteresponse.md
+  - docs/models/components/userdeleteresponseobject.md
+  - docs/models/components/userlistresponse.md
+  - docs/models/components/userlistresponseobject.md
+  - docs/models/components/userobject.md
+  - docs/models/components/userrole.md
+  - docs/models/components/userroleupdaterequest.md
+  - docs/models/components/userroleupdaterequestrole.md
+  - docs/models/components/userupdated.md
+  - docs/models/components/vectorstoreexpirationafter.md
+  - docs/models/components/vectorstorefilebatchobject.md
+  - docs/models/components/vectorstorefilebatchobjectfilecounts.md
+  - docs/models/components/vectorstorefilebatchobjectobject.md
+  - docs/models/components/vectorstorefilebatchobjectstatus.md
+  - docs/models/components/vectorstorefileobject.md
+  - docs/models/components/vectorstorefileobjectchunkingstrategy.md
+  - docs/models/components/vectorstorefileobjectcode.md
+  - docs/models/components/vectorstorefileobjectlasterror.md
+  - docs/models/components/vectorstorefileobjectobject.md
+  - docs/models/components/vectorstorefileobjectstatus.md
+  - docs/models/components/vectorstoreobject.md
+  - docs/models/components/vectorstoreobjectmetadata.md
+  - docs/models/components/vectorstoreobjectobject.md
+  - docs/models/components/vectorstoreobjectstatus.md
+  - docs/models/components/vectorstores.md
+  - docs/models/components/violence.md
+  - docs/models/components/violencegraphic.md
+  - docs/models/components/voice.md
+  - docs/models/components/wandb.md
+  - docs/models/operations/adduploadpartrequest.md
+  - docs/models/operations/adduploadpartresponse.md
+  - docs/models/operations/archiveprojectrequest.md
+  - docs/models/operations/archiveprojectresponse.md
+  - docs/models/operations/cancelbatchrequest.md
+  - docs/models/operations/cancelbatchresponse.md
+  - docs/models/operations/cancelfinetuningjobrequest.md
+  - docs/models/operations/cancelfinetuningjobresponse.md
+  - docs/models/operations/cancelrunrequest.md
+  - docs/models/operations/cancelrunresponse.md
+  - docs/models/operations/canceluploadrequest.md
+  - docs/models/operations/canceluploadresponse.md
+  - docs/models/operations/cancelvectorstorefilebatchrequest.md
+  - docs/models/operations/cancelvectorstorefilebatchresponse.md
+  - docs/models/operations/completeuploadrequest.md
+  - docs/models/operations/completeuploadresponse.md
+  - docs/models/operations/completionwindow.md
+  - docs/models/operations/createassistantresponse.md
+  - docs/models/operations/createbatchrequestbody.md
+  - docs/models/operations/createbatchresponse.md
+  - docs/models/operations/createchatcompletionresponse.md
+  - docs/models/operations/createcompletionresponse.md
+  - docs/models/operations/createembeddingresponse.md
+  - docs/models/operations/createfileresponse.md
+  - docs/models/operations/createfinetuningjobresponse.md
+  - docs/models/operations/createimageeditresponse.md
+  - docs/models/operations/createimageresponse.md
+  - docs/models/operations/createimagevariationresponse.md
+  - docs/models/operations/createmessagerequest.md
+  - docs/models/operations/createmessageresponse.md
+  - docs/models/operations/createmoderationresponse.md
+  - docs/models/operations/createprojectresponse.md
+  - docs/models/operations/createprojectserviceaccountrequest.md
+  - docs/models/operations/createprojectserviceaccountresponse.md
+  - docs/models/operations/createprojectuserrequest.md
+  - docs/models/operations/createprojectuserresponse.md
+  - docs/models/operations/createrunrequest.md
+  - docs/models/operations/createrunresponse.md
+  - docs/models/operations/createspeechresponse.md
+  - docs/models/operations/createthreadandrunresponse.md
+  - docs/models/operations/createthreadresponse.md
+  - docs/models/operations/createtranscriptionresponse.md
+  - docs/models/operations/createtranscriptionresponsebody.md
+  - docs/models/operations/createtranslationresponse.md
+  - docs/models/operations/createtranslationresponsebody.md
+  - docs/models/operations/createuploadresponse.md
+  - docs/models/operations/createvectorstorefilebatchrequest.md
+  - docs/models/operations/createvectorstorefilebatchresponse.md
+  - docs/models/operations/createvectorstorefilerequest.md
+  - docs/models/operations/createvectorstorefileresponse.md
+  - docs/models/operations/createvectorstoreresponse.md
+  - docs/models/operations/deleteassistantrequest.md
+  - docs/models/operations/deleteassistantresponse.md
+  - docs/models/operations/deletefilerequest.md
+  - docs/models/operations/deletefileresponse.md
+  - docs/models/operations/deleteinviterequest.md
+  - docs/models/operations/deleteinviteresponse.md
+  - docs/models/operations/deletemessagerequest.md
+  - docs/models/operations/deletemessageresponse.md
+  - docs/models/operations/deletemodelrequest.md
+  - docs/models/operations/deletemodelresponse.md
+  - docs/models/operations/deleteprojectapikeyrequest.md
+  - docs/models/operations/deleteprojectapikeyresponse.md
+  - docs/models/operations/deleteprojectserviceaccountrequest.md
+  - docs/models/operations/deleteprojectserviceaccountresponse.md
+  - docs/models/operations/deleteprojectuserrequest.md
+  - docs/models/operations/deleteprojectuserresponse.md
+  - docs/models/operations/deletethreadrequest.md
+  - docs/models/operations/deletethreadresponse.md
+  - docs/models/operations/deleteuserrequest.md
+  - docs/models/operations/deleteuserresponse.md
+  - docs/models/operations/deletevectorstorefilerequest.md
+  - docs/models/operations/deletevectorstorefileresponse.md
+  - docs/models/operations/deletevectorstorerequest.md
+  - docs/models/operations/deletevectorstoreresponse.md
+  - docs/models/operations/downloadfilerequest.md
+  - docs/models/operations/downloadfileresponse.md
+  - docs/models/operations/effectiveat.md
+  - docs/models/operations/endpoint.md
+  - docs/models/operations/filter.md
+  - docs/models/operations/getassistantrequest.md
+  - docs/models/operations/getassistantresponse.md
+  - docs/models/operations/getmessagerequest.md
+  - docs/models/operations/getmessageresponse.md
+  - docs/models/operations/getrunrequest.md
+  - docs/models/operations/getrunresponse.md
+  - docs/models/operations/getrunstepqueryparaminclude.md
+  - docs/models/operations/getrunsteprequest.md
+  - docs/models/operations/getrunstepresponse.md
+  - docs/models/operations/getthreadrequest.md
+  - docs/models/operations/getthreadresponse.md
+  - docs/models/operations/getvectorstorefilebatchrequest.md
+  - docs/models/operations/getvectorstorefilebatchresponse.md
+  - docs/models/operations/getvectorstorefilerequest.md
+  - docs/models/operations/getvectorstorefileresponse.md
+  - docs/models/operations/getvectorstorerequest.md
+  - docs/models/operations/getvectorstoreresponse.md
+  - docs/models/operations/include.md
+  - docs/models/operations/inviteuserresponse.md
+  - docs/models/operations/listassistantsrequest.md
+  - docs/models/operations/listassistantsresponse.md
+  - docs/models/operations/listauditlogsrequest.md
+  - docs/models/operations/listauditlogsresponse.md
+  - docs/models/operations/listbatchesrequest.md
+  - docs/models/operations/listbatchesresponse.md
+  - docs/models/operations/listfilesinvectorstorebatchqueryparamorder.md
+  - docs/models/operations/listfilesinvectorstorebatchrequest.md
+  - docs/models/operations/listfilesinvectorstorebatchresponse.md
+  - docs/models/operations/listfilesrequest.md
+  - docs/models/operations/listfilesresponse.md
+  - docs/models/operations/listfinetuningeventsrequest.md
+  - docs/models/operations/listfinetuningeventsresponse.md
+  - docs/models/operations/listfinetuningjobcheckpointsrequest.md
+  - docs/models/operations/listfinetuningjobcheckpointsresponse.md
+  - docs/models/operations/listinvitesrequest.md
+  - docs/models/operations/listinvitesresponse.md
+  - docs/models/operations/listmessagesqueryparamorder.md
+  - docs/models/operations/listmessagesrequest.md
+  - docs/models/operations/listmessagesresponse.md
+  - docs/models/operations/listmodelsresponse.md
+  - docs/models/operations/listpaginatedfinetuningjobsrequest.md
+  - docs/models/operations/listpaginatedfinetuningjobsresponse.md
+  - docs/models/operations/listprojectapikeysrequest.md
+  - docs/models/operations/listprojectapikeysresponse.md
+  - docs/models/operations/listprojectserviceaccountsrequest.md
+  - docs/models/operations/listprojectserviceaccountsresponse.md
+  - docs/models/operations/listprojectsrequest.md
+  - docs/models/operations/listprojectsresponse.md
+  - docs/models/operations/listprojectusersrequest.md
+  - docs/models/operations/listprojectusersresponse.md
+  - docs/models/operations/listrunsqueryparamorder.md
+  - docs/models/operations/listrunsrequest.md
+  - docs/models/operations/listrunsresponse.md
+  - docs/models/operations/listrunstepsqueryparamorder.md
+  - docs/models/operations/listrunstepsrequest.md
+  - docs/models/operations/listrunstepsresponse.md
+  - docs/models/operations/listusersrequest.md
+  - docs/models/operations/listusersresponse.md
+  - docs/models/operations/listvectorstorefilesqueryparamorder.md
+  - docs/models/operations/listvectorstorefilesrequest.md
+  - docs/models/operations/listvectorstorefilesresponse.md
+  - docs/models/operations/listvectorstoresqueryparamorder.md
+  - docs/models/operations/listvectorstoresrequest.md
+  - docs/models/operations/listvectorstoresresponse.md
+  - docs/models/operations/modifyassistantrequest.md
+  - docs/models/operations/modifyassistantresponse.md
+  - docs/models/operations/modifymessagerequest.md
+  - docs/models/operations/modifymessageresponse.md
+  - docs/models/operations/modifyprojectrequest.md
+  - docs/models/operations/modifyprojectresponse.md
+  - docs/models/operations/modifyprojectuserrequest.md
+  - docs/models/operations/modifyprojectuserresponse.md
+  - docs/models/operations/modifyrunrequest.md
+  - docs/models/operations/modifyrunresponse.md
+  - docs/models/operations/modifythreadrequest.md
+  - docs/models/operations/modifythreadresponse.md
+  - docs/models/operations/modifyuserrequest.md
+  - docs/models/operations/modifyuserresponse.md
+  - docs/models/operations/modifyvectorstorerequest.md
+  - docs/models/operations/modifyvectorstoreresponse.md
+  - docs/models/operations/option.md
+  - docs/models/operations/order.md
+  - docs/models/operations/queryparamfilter.md
+  - docs/models/operations/queryparaminclude.md
+  - docs/models/operations/queryparamorder.md
+  - docs/models/operations/retrievebatchrequest.md
+  - docs/models/operations/retrievebatchresponse.md
+  - docs/models/operations/retrievefilerequest.md
+  - docs/models/operations/retrievefileresponse.md
+  - docs/models/operations/retrievefinetuningjobrequest.md
+  - docs/models/operations/retrievefinetuningjobresponse.md
+  - docs/models/operations/retrieveinviterequest.md
+  - docs/models/operations/retrieveinviteresponse.md
+  - docs/models/operations/retrievemodelrequest.md
+  - docs/models/operations/retrievemodelresponse.md
+  - docs/models/operations/retrieveprojectapikeyrequest.md
+  - docs/models/operations/retrieveprojectapikeyresponse.md
+  - docs/models/operations/retrieveprojectrequest.md
+  - docs/models/operations/retrieveprojectresponse.md
+  - docs/models/operations/retrieveprojectserviceaccountrequest.md
+  - docs/models/operations/retrieveprojectserviceaccountresponse.md
+  - docs/models/operations/retrieveprojectuserrequest.md
+  - docs/models/operations/retrieveprojectuserresponse.md
+  - docs/models/operations/retrieveuserrequest.md
+  - docs/models/operations/retrieveuserresponse.md
+  - docs/models/operations/submittoolouputstorunrequest.md
+  - docs/models/operations/submittoolouputstorunresponse.md
+  - docs/sdks/assistants/README.md
+  - docs/sdks/audio/README.md
+  - docs/sdks/auditlogs/README.md
+  - docs/sdks/batch/README.md
+  - docs/sdks/batches/README.md
+  - docs/sdks/chat/README.md
+  - docs/sdks/completions/README.md
+  - docs/sdks/embeddings/README.md
+  - docs/sdks/files/README.md
+  - docs/sdks/finetuning/README.md
+  - docs/sdks/images/README.md
+  - docs/sdks/invites/README.md
+  - docs/sdks/models/README.md
+  - docs/sdks/moderations/README.md
+  - docs/sdks/openaiapi/README.md
+  - docs/sdks/projects/README.md
+  - docs/sdks/uploads/README.md
+  - docs/sdks/users/README.md
+  - docs/sdks/vectorstores/README.md
+  - embeddings.go
+  - files.go
+  - finetuning.go
+  - go.mod
+  - images.go
+  - internal/hooks/hooks.go
+  - internal/utils/contenttype.go
+  - internal/utils/form.go
+  - internal/utils/headers.go
+  - internal/utils/json.go
+  - internal/utils/pathparams.go
+  - internal/utils/queryparams.go
+  - internal/utils/requestbody.go
+  - internal/utils/retries.go
+  - internal/utils/security.go
+  - internal/utils/utils.go
+  - invites.go
+  - models.go
+  - models/apierrors/apierror.go
+  - models/operations/options.go
+  - moderations.go
+  - openaiapi.go
+  - projects.go
+  - retry/config.go
+  - types/bigint.go
+  - types/date.go
+  - types/datetime.go
+  - types/decimal.go
+  - types/pointers.go
+  - uploads.go
+  - users.go
+  - vectorstores.go
+examples:
+  listAssistants:
+    speakeasy-default-list-assistants:
+      responses:
+        "200":
+          application/json: {"object": "list", "data": [{"id": "<id>", "object": "assistant", "created_at": 45670, "name": "<value>", "description": "hmph pixellate shabby suburban devil behind opera", "model": "Roadster", "instructions": "<value>", "tools": [{"type": "function", "function": {"name": "<value>"}}, {"type": "file_search"}, {"type": "function", "function": {"name": "<value>"}}], "temperature": 1, "top_p": 1}, {"id": "<id>", "object": "assistant", "created_at": 525577, "name": "<value>", "description": "than fatal fencing recommendation commonly", "model": "A4", "instructions": "<value>", "tools": [{"type": "file_search"}], "temperature": 1, "top_p": 1}, {"id": "<id>", "object": "assistant", "created_at": 554417, "name": "<value>", "description": "who immediately when gah poorly", "model": "Spyder", "instructions": "<value>", "tools": [{"type": "file_search"}, {"type": "code_interpreter"}], "temperature": 1, "top_p": 1}], "first_id": "asst_abc123", "last_id": "asst_abc456", "has_more": false}
+  createAssistant:
+    speakeasy-default-create-assistant:
+      requestBody:
+        application/json: {"model": "gpt-4o", "temperature": 1, "top_p": 1}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "assistant", "created_at": 331444, "name": "<value>", "description": "phew starboard successfully worth stack yuck", "model": "Corvette", "instructions": "<value>", "tools": [], "temperature": 1, "top_p": 1}
+  getAssistant:
+    speakeasy-default-get-assistant:
+      parameters:
+        path:
+          assistant_id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "assistant", "created_at": 956568, "name": "<value>", "description": "gadzooks affiliate deadly tensely whoa mmm untrue", "model": "Focus", "instructions": "<value>", "tools": [{"type": "file_search"}, {"type": "code_interpreter"}], "temperature": 1, "top_p": 1}
+  modifyAssistant:
+    speakeasy-default-modify-assistant:
+      parameters:
+        path:
+          assistant_id: "<id>"
+      requestBody:
+        application/json: {"temperature": 1, "top_p": 1}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "assistant", "created_at": 35769, "name": "<value>", "description": "unto tall before um giggle", "model": "A4", "instructions": "<value>", "tools": [{"type": "file_search"}], "temperature": 1, "top_p": 1}
+  deleteAssistant:
+    speakeasy-default-delete-assistant:
+      parameters:
+        path:
+          assistant_id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "deleted": true, "object": "assistant.deleted"}
+  createThread:
+    speakeasy-default-create-thread:
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "thread", "created_at": 301525}
+  createThreadAndRun:
+    speakeasy-default-create-thread-and-run:
+      requestBody:
+        application/json: {"assistant_id": "<id>", "model": "gpt-4o", "temperature": 1, "top_p": 1}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "thread.run", "created_at": 779675, "thread_id": "<id>", "assistant_id": "<id>", "status": "cancelled", "required_action": {"type": "submit_tool_outputs", "submit_tool_outputs": {"tool_calls": [{"id": "<id>", "type": "function", "function": {"name": "<value>", "arguments": "<value>"}}]}}, "last_error": {"code": "server_error", "message": "<value>"}, "expires_at": 374894, "started_at": 210785, "cancelled_at": 343816, "failed_at": 819058, "completed_at": 834533, "model": "Spyder", "instructions": "<value>", "tools": [], "usage": {"completion_tokens": 35078, "prompt_tokens": 724873, "total_tokens": 695537}, "max_prompt_tokens": 645476, "max_completion_tokens": 436094, "truncation_strategy": {"type": "auto"}, "tool_choice": {"type": "code_interpreter"}, "response_format": {"type": "json_schema", "json_schema": {"name": "<value>"}}}
+  getThread:
+    speakeasy-default-get-thread:
+      parameters:
+        path:
+          thread_id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "thread", "created_at": 265447}
+  modifyThread:
+    speakeasy-default-modify-thread:
+      parameters:
+        path:
+          thread_id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "thread", "created_at": 39311}
+  deleteThread:
+    speakeasy-default-delete-thread:
+      parameters:
+        path:
+          thread_id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "deleted": true, "object": "thread.deleted"}
+  listMessages:
+    speakeasy-default-list-messages:
+      parameters:
+        path:
+          thread_id: "<id>"
+        query: {}
+      responses:
+        "200":
+          application/json: {"object": "list", "data": [], "first_id": "msg_abc123", "last_id": "msg_abc123", "has_more": false}
+  createMessage:
+    speakeasy-default-create-message:
+      parameters:
+        path:
+          thread_id: "<id>"
+      requestBody:
+        application/json: {"role": "user", "content": []}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "thread.message", "created_at": 300623, "thread_id": "<id>", "status": "completed", "incomplete_details": {"reason": "run_cancelled"}, "completed_at": 754518, "incomplete_at": 650853, "role": "assistant", "content": [{"type": "image_url", "image_url": {"url": "https://minty-cemetery.com/"}}, {"type": "image_url", "image_url": {"url": "https://essential-decryption.name/"}}], "assistant_id": "<id>", "run_id": "<id>", "attachments": []}
+  getMessage:
+    speakeasy-default-get-message:
+      parameters:
+        path:
+          thread_id: "<id>"
+          message_id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "thread.message", "created_at": 969207, "thread_id": "<id>", "status": "in_progress", "incomplete_details": {"reason": "content_filter"}, "completed_at": 761295, "incomplete_at": 249746, "role": "user", "content": [], "assistant_id": "<id>", "run_id": "<id>", "attachments": []}
+  modifyMessage:
+    speakeasy-default-modify-message:
+      parameters:
+        path:
+          thread_id: "<id>"
+          message_id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "thread.message", "created_at": 243941, "thread_id": "<id>", "status": "incomplete", "incomplete_details": {"reason": "content_filter"}, "completed_at": 422851, "incomplete_at": 330217, "role": "assistant", "content": [{"type": "image_file", "image_file": {"file_id": "<id>"}}], "assistant_id": "<id>", "run_id": "<id>", "attachments": []}
+  deleteMessage:
+    speakeasy-default-delete-message:
+      parameters:
+        path:
+          thread_id: "<id>"
+          message_id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "deleted": false, "object": "thread.message.deleted"}
+  listRuns:
+    speakeasy-default-list-runs:
+      parameters:
+        path:
+          thread_id: "<id>"
+        query: {}
+      responses:
+        "200":
+          application/json: {"object": "list", "data": [{"id": "<id>", "object": "thread.run", "created_at": 867569, "thread_id": "<id>", "assistant_id": "<id>", "status": "incomplete", "required_action": {"type": "submit_tool_outputs", "submit_tool_outputs": {"tool_calls": [{"id": "<id>", "type": "function", "function": {"name": "<value>", "arguments": "<value>"}}, {"id": "<id>", "type": "function", "function": {"name": "<value>", "arguments": "<value>"}}]}}, "last_error": {"code": "rate_limit_exceeded", "message": "<value>"}, "expires_at": 21507, "started_at": 343081, "cancelled_at": 408090, "failed_at": 933818, "completed_at": 620479, "model": "Silverado", "instructions": "<value>", "tools": [], "usage": {"completion_tokens": 298450, "prompt_tokens": 10763, "total_tokens": 923338}, "max_prompt_tokens": 713317, "max_completion_tokens": 910438, "truncation_strategy": {"type": "auto"}, "tool_choice": {"type": "file_search"}, "response_format": {"type": "json_object"}}], "first_id": "run_abc123", "last_id": "run_abc456", "has_more": false}
+  createRun:
+    speakeasy-default-create-run:
+      parameters:
+        path:
+          thread_id: "<id>"
+        query: {}
+      requestBody:
+        application/json: {"assistant_id": "<id>", "model": "gpt-4o", "temperature": 1, "top_p": 1}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "thread.run", "created_at": 106617, "thread_id": "<id>", "assistant_id": "<id>", "status": "cancelling", "required_action": {"type": "submit_tool_outputs", "submit_tool_outputs": {"tool_calls": []}}, "last_error": {"code": "server_error", "message": "<value>"}, "expires_at": 992404, "started_at": 294791, "cancelled_at": 17207, "failed_at": 746472, "completed_at": 501596, "model": "Golf", "instructions": "<value>", "tools": [{"type": "file_search"}], "usage": {"completion_tokens": 61827, "prompt_tokens": 997945, "total_tokens": 572902}, "max_prompt_tokens": 249402, "max_completion_tokens": 298157, "truncation_strategy": {"type": "auto"}, "tool_choice": "none", "response_format": "auto"}
+  getRun:
+    speakeasy-default-get-run:
+      parameters:
+        path:
+          thread_id: "<id>"
+          run_id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "thread.run", "created_at": 747205, "thread_id": "<id>", "assistant_id": "<id>", "status": "queued", "required_action": {"type": "submit_tool_outputs", "submit_tool_outputs": {"tool_calls": []}}, "last_error": {"code": "rate_limit_exceeded", "message": "<value>"}, "expires_at": 833314, "started_at": 986140, "cancelled_at": 760030, "failed_at": 676781, "completed_at": 670592, "model": "Mustang", "instructions": "<value>", "tools": [{"type": "function", "function": {"name": "<value>"}}, {"type": "file_search"}, {"type": "code_interpreter"}], "usage": {"completion_tokens": 966965, "prompt_tokens": 963826, "total_tokens": 566973}, "max_prompt_tokens": 814749, "max_completion_tokens": 647461, "truncation_strategy": {"type": "last_messages"}, "tool_choice": {"type": "file_search"}, "response_format": "auto"}
+  modifyRun:
+    speakeasy-default-modify-run:
+      parameters:
+        path:
+          thread_id: "<id>"
+          run_id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "thread.run", "created_at": 191289, "thread_id": "<id>", "assistant_id": "<id>", "status": "in_progress", "required_action": {"type": "submit_tool_outputs", "submit_tool_outputs": {"tool_calls": []}}, "last_error": {"code": "invalid_prompt", "message": "<value>"}, "expires_at": 313923, "started_at": 523103, "cancelled_at": 886046, "failed_at": 159567, "completed_at": 581316, "model": "Malibu", "instructions": "<value>", "tools": [{"type": "code_interpreter"}, {"type": "code_interpreter"}], "usage": {"completion_tokens": 731191, "prompt_tokens": 425584, "total_tokens": 552784}, "max_prompt_tokens": 105753, "max_completion_tokens": 944322, "truncation_strategy": {"type": "last_messages"}, "tool_choice": {"type": "code_interpreter"}, "response_format": {"type": "json_object"}}
+  cancelRun:
+    speakeasy-default-cancel-run:
+      parameters:
+        path:
+          thread_id: "<id>"
+          run_id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "thread.run", "created_at": 360963, "thread_id": "<id>", "assistant_id": "<id>", "status": "queued", "required_action": {"type": "submit_tool_outputs", "submit_tool_outputs": {"tool_calls": [{"id": "<id>", "type": "function", "function": {"name": "<value>", "arguments": "<value>"}}, {"id": "<id>", "type": "function", "function": {"name": "<value>", "arguments": "<value>"}}, {"id": "<id>", "type": "function", "function": {"name": "<value>", "arguments": "<value>"}}]}}, "last_error": {"code": "server_error", "message": "<value>"}, "expires_at": 341175, "started_at": 435140, "cancelled_at": 374299, "failed_at": 113223, "completed_at": 166372, "model": "Challenger", "instructions": "<value>", "tools": [{"type": "file_search"}], "usage": {"completion_tokens": 166684, "prompt_tokens": 28228, "total_tokens": 366111}, "max_prompt_tokens": 280605, "max_completion_tokens": 202143, "truncation_strategy": {"type": "auto"}, "tool_choice": {"type": "code_interpreter"}, "response_format": {"type": "text"}}
+  listRunSteps:
+    speakeasy-default-list-run-steps:
+      parameters:
+        path:
+          thread_id: "<id>"
+          run_id: "<id>"
+        query: {}
+      responses:
+        "200":
+          application/json: {"object": "list", "data": [{"id": "<id>", "object": "thread.run.step", "created_at": 445488, "assistant_id": "<id>", "thread_id": "<id>", "run_id": "<id>", "type": "tool_calls", "status": "failed", "step_details": {"type": "message_creation", "message_creation": {"message_id": "<id>"}}, "last_error": {"code": "rate_limit_exceeded", "message": "<value>"}, "expired_at": 103627, "cancelled_at": 772489, "failed_at": 324289, "completed_at": 919818, "usage": {"completion_tokens": 224159, "prompt_tokens": 442950, "total_tokens": 982456}}, {"id": "<id>", "object": "thread.run.step", "created_at": 808566, "assistant_id": "<id>", "thread_id": "<id>", "run_id": "<id>", "type": "message_creation", "status": "in_progress", "step_details": {"type": "message_creation", "message_creation": {"message_id": "<id>"}}, "last_error": {"code": "server_error", "message": "<value>"}, "expired_at": 440290, "cancelled_at": 790329, "failed_at": 597021, "completed_at": 313707, "usage": {"completion_tokens": 22727, "prompt_tokens": 682980, "total_tokens": 87148}}, {"id": "<id>", "object": "thread.run.step", "created_at": 32969, "assistant_id": "<id>", "thread_id": "<id>", "run_id": "<id>", "type": "message_creation", "status": "completed", "step_details": {"type": "tool_calls", "tool_calls": [{"id": "<id>", "type": "code_interpreter", "code_interpreter": {"input": "<value>", "outputs": [{"type": "image", "image": {"file_id": "<id>"}}, {"type": "image", "image": {"file_id": "<id>"}}, {"type": "image", "image": {"file_id": "<id>"}}]}}]}, "last_error": {"code": "server_error", "message": "<value>"}, "expired_at": 661663, "cancelled_at": 413578, "failed_at": 284414, "completed_at": 920682, "usage": {"completion_tokens": 244873, "prompt_tokens": 866096, "total_tokens": 410947}}], "first_id": "step_abc123", "last_id": "step_abc456", "has_more": false}
+  getRunStep:
+    speakeasy-default-get-run-step:
+      parameters:
+        path:
+          thread_id: "<id>"
+          run_id: "<id>"
+          step_id: "<id>"
+        query: {}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "thread.run.step", "created_at": 341966, "assistant_id": "<id>", "thread_id": "<id>", "run_id": "<id>", "type": "tool_calls", "status": "completed", "step_details": {"type": "message_creation", "message_creation": {"message_id": "<id>"}}, "last_error": {"code": "rate_limit_exceeded", "message": "<value>"}, "expired_at": 555737, "cancelled_at": 751965, "failed_at": 305594, "completed_at": 305993, "usage": {"completion_tokens": 133629, "prompt_tokens": 842946, "total_tokens": 249142}}
+  submitToolOuputsToRun:
+    speakeasy-default-submit-tool-ouputs-to-run:
+      parameters:
+        path:
+          thread_id: "<id>"
+          run_id: "<id>"
+      requestBody:
+        application/json: {"tool_outputs": []}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "thread.run", "created_at": 756513, "thread_id": "<id>", "assistant_id": "<id>", "status": "cancelled", "required_action": {"type": "submit_tool_outputs", "submit_tool_outputs": {"tool_calls": [{"id": "<id>", "type": "function", "function": {"name": "<value>", "arguments": "<value>"}}, {"id": "<id>", "type": "function", "function": {"name": "<value>", "arguments": "<value>"}}, {"id": "<id>", "type": "function", "function": {"name": "<value>", "arguments": "<value>"}}]}}, "last_error": {"code": "invalid_prompt", "message": "<value>"}, "expires_at": 833344, "started_at": 734710, "cancelled_at": 538930, "failed_at": 717594, "completed_at": 91892, "model": "Accord", "instructions": "<value>", "tools": [{"type": "code_interpreter"}, {"type": "code_interpreter"}], "usage": {"completion_tokens": 60184, "prompt_tokens": 632469, "total_tokens": 413041}, "max_prompt_tokens": 235822, "max_completion_tokens": 562348, "truncation_strategy": {"type": "auto"}, "tool_choice": {"type": "code_interpreter"}, "response_format": {"type": "json_schema", "json_schema": {"name": "<value>"}}}
+  createSpeech:
+    speakeasy-default-create-speech:
+      requestBody:
+        application/json: {"model": "tts-1", "input": "<value>", "voice": "onyx"}
+  createTranscription:
+    speakeasy-default-create-transcription:
+      requestBody:
+        multipart/form-data: {"file": {}, "model": "whisper-1"}
+      responses:
+        "200":
+          application/json: {"language": "<value>", "duration": "<value>", "text": "<value>"}
+  createTranslation:
+    speakeasy-default-create-translation:
+      requestBody:
+        multipart/form-data: {"file": {}, "model": "whisper-1"}
+      responses:
+        "200":
+          application/json: {"text": "<value>"}
+  createBatch:
+    speakeasy-default-create-batch:
+      requestBody:
+        application/json: {"input_file_id": "<id>", "endpoint": "/v1/completions", "completion_window": "24h"}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "batch", "endpoint": "<value>", "input_file_id": "<id>", "completion_window": "<value>", "status": "cancelling", "created_at": 18836}
+  listBatches:
+    speakeasy-default-list-batches:
+      responses:
+        "200":
+          application/json: {"data": [{"id": "<id>", "object": "batch", "endpoint": "<value>", "input_file_id": "<id>", "completion_window": "<value>", "status": "cancelled", "created_at": 44181}, {"id": "<id>", "object": "batch", "endpoint": "<value>", "input_file_id": "<id>", "completion_window": "<value>", "status": "validating", "created_at": 711307}], "first_id": "batch_abc123", "last_id": "batch_abc456", "has_more": false, "object": "list"}
+  retrieveBatch:
+    speakeasy-default-retrieve-batch:
+      parameters:
+        path:
+          batch_id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "batch", "endpoint": "<value>", "input_file_id": "<id>", "completion_window": "<value>", "status": "in_progress", "created_at": 31606}
+  cancelBatch:
+    speakeasy-default-cancel-batch:
+      parameters:
+        path:
+          batch_id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "batch", "endpoint": "<value>", "input_file_id": "<id>", "completion_window": "<value>", "status": "validating", "created_at": 115745}
+  createChatCompletion:
+    speakeasy-default-create-chat-completion:
+      requestBody:
+        application/json: {"messages": [{"content": "<value>", "role": "user"}, {"content": [{"type": "image_url", "image_url": {"url": "https://rewarding-drug.com"}}, {"type": "text", "text": "<value>"}], "role": "user"}, {"role": "tool", "content": "<value>", "tool_call_id": "<id>"}], "model": "gpt-4o", "n": 1, "temperature": 1, "top_p": 1, "user": "user-1234"}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "choices": [{"finish_reason": "content_filter", "index": 325851, "message": {"content": "<value>", "refusal": "<value>", "role": "assistant"}, "logprobs": {"content": [], "refusal": [{"token": "<value>", "logprob": "2672.45", "bytes": [103660, 290021], "top_logprobs": []}, {"token": "<value>", "logprob": "2731.25", "bytes": [375581, 369591, 689776], "top_logprobs": [{"token": "<value>", "logprob": "8560.16", "bytes": [465660]}, {"token": "<value>", "logprob": "5619.88", "bytes": [215745]}, {"token": "<value>", "logprob": "7482.58", "bytes": [357467]}]}]}}, {"finish_reason": "length", "index": 486652, "message": {"content": "<value>", "refusal": "<value>", "role": "assistant"}, "logprobs": {"content": [{"token": "<value>", "logprob": "6336.60", "bytes": [457445], "top_logprobs": [{"token": "<value>", "logprob": "603.48", "bytes": [908016]}]}, {"token": "<value>", "logprob": "747.32", "bytes": [559882, 147472, 906474], "top_logprobs": [{"token": "<value>", "logprob": "915.16", "bytes": [901053]}, {"token": "<value>", "logprob": "6895.64", "bytes": [504062, 618317]}]}], "refusal": [{"token": "<value>", "logprob": "9003.29", "bytes": [844296, 821155, 678945], "top_logprobs": []}, {"token": "<value>", "logprob": "8158.70", "bytes": [455278], "top_logprobs": [{"token": "<value>", "logprob": "9279.75", "bytes": []}]}, {"token": "<value>", "logprob": "7516.03", "bytes": [991273], "top_logprobs": [{"token": "<value>", "logprob": "5394.91", "bytes": [507599]}, {"token": "<value>", "logprob": "308.87", "bytes": [329318, 155375, 131273]}]}]}}, {"finish_reason": "function_call", "index": 166597, "message": {"content": "<value>", "refusal": "<value>", "role": "assistant"}, "logprobs": {"content": [{"token": "<value>", "logprob": "415.28", "bytes": [152907, 968227], "top_logprobs": [{"token": "<value>", "logprob": "4138.87", "bytes": [726051, 821835, 876710]}]}], "refusal": [{"token": "<value>", "logprob": "3783.04", "bytes": [836085], "top_logprobs": [{"token": "<value>", "logprob": "9660.82", "bytes": [156043, 763295]}, {"token": "<value>", "logprob": "2780.63", "bytes": [583896, 951234]}, {"token": "<value>", "logprob": "3603.52", "bytes": [263290, 33264]}]}, {"token": "<value>", "logprob": "9367.17", "bytes": [132259], "top_logprobs": [{"token": "<value>", "logprob": "3283.14", "bytes": [879314, 726652, 624874]}, {"token": "<value>", "logprob": "4356.13", "bytes": [187159, 230528]}, {"token": "<value>", "logprob": "5486.45", "bytes": [409541, 795325, 12556]}]}]}}], "created": 493837, "model": "Model T", "service_tier": "scale", "object": "chat.completion"}
+  createCompletion:
+    speakeasy-default-create-completion:
+      requestBody:
+        application/json: {"model": "<value>", "prompt": "This is a test.", "max_tokens": 16, "n": 1, "stop": ["[\"\\n\"]"], "suffix": "test.", "temperature": 1, "top_p": 1, "user": "user-1234"}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "choices": [{"finish_reason": "stop", "index": 444045, "text": "<value>"}, {"finish_reason": "stop", "index": 920146, "text": "<value>"}], "created": 963877, "model": "Expedition", "object": "text_completion"}
+  createEmbedding:
+    speakeasy-default-create-embedding:
+      requestBody:
+        application/json: {"input": "The quick brown fox jumped over the lazy dog", "model": "text-embedding-3-small", "encoding_format": "float", "user": "user-1234"}
+      responses:
+        "200":
+          application/json: {"data": [{"index": 510786, "embedding": ["2835.43", "4596.88"], "object": "embedding"}, {"index": 825600, "embedding": ["6555.53"], "object": "embedding"}, {"index": 238129, "embedding": [], "object": "embedding"}], "model": "Land Cruiser", "object": "list", "usage": {"prompt_tokens": 284320, "total_tokens": 735606}}
+  listFiles:
+    speakeasy-default-list-files:
+      responses:
+        "200":
+          application/json: {"object": "list", "data": [{"id": "<id>", "bytes": 248286, "created_at": 766368, "filename": "example.file", "object": "file", "purpose": "assistants_output", "status": "processed"}, {"id": "<id>", "bytes": 272337, "created_at": 30965, "filename": "example.file", "object": "file", "purpose": "batch", "status": "processed"}], "first_id": "file-abc123", "last_id": "file-abc456", "has_more": false}
+  createFile:
+    speakeasy-default-create-file:
+      requestBody:
+        multipart/form-data: {"file": {}, "purpose": "fine-tune"}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "bytes": 35242, "created_at": 682767, "filename": "example.file", "object": "file", "purpose": "batch_output", "status": "processed"}
+  deleteFile:
+    speakeasy-default-delete-file:
+      parameters:
+        path:
+          file_id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "file", "deleted": false}
+  retrieveFile:
+    speakeasy-default-retrieve-file:
+      parameters:
+        path:
+          file_id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "bytes": 676120, "created_at": 451021, "filename": "example.file", "object": "file", "purpose": "fine-tune-results", "status": "uploaded"}
+  downloadFile:
+    speakeasy-default-download-file:
+      parameters:
+        path:
+          file_id: "<id>"
+      responses:
+        "200":
+          application/json: "<value>"
+  createFineTuningJob:
+    speakeasy-default-create-fine-tuning-job:
+      requestBody:
+        application/json: {"model": "gpt-4o-mini", "training_file": "file-abc123", "validation_file": "file-abc123", "integrations": [{"type": "wandb", "wandb": {"project": "my-wandb-project", "tags": ["custom-tag"]}}], "seed": 42}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "created_at": 174719, "error": {"code": "<value>", "message": "<value>", "param": "<value>"}, "fine_tuned_model": "<value>", "finished_at": 682252, "hyperparameters": {"n_epochs": 275085}, "model": "El Camino", "object": "fine_tuning.job", "organization_id": "<id>", "result_files": ["file-abc123"], "status": "succeeded", "trained_tokens": 847066, "training_file": "<value>", "validation_file": "<value>", "integrations": [{"type": "wandb", "wandb": {"project": "my-wandb-project", "tags": ["custom-tag"]}}, {"type": "wandb", "wandb": {"project": "my-wandb-project", "tags": ["custom-tag"]}}], "seed": 313372}
+  listPaginatedFineTuningJobs:
+    speakeasy-default-list-paginated-fine-tuning-jobs:
+      responses:
+        "200":
+          application/json: {"data": [{"id": "<id>", "created_at": 293768, "error": {"code": "<value>", "message": "<value>", "param": "<value>"}, "fine_tuned_model": "<value>", "finished_at": 450765, "hyperparameters": {"n_epochs": 513819}, "model": "Durango", "object": "fine_tuning.job", "organization_id": "<id>", "result_files": ["file-abc123"], "status": "cancelled", "trained_tokens": 270375, "training_file": "<value>", "validation_file": "<value>", "integrations": [], "seed": 931452}], "has_more": true, "object": "list"}
+  retrieveFineTuningJob:
+    speakeasy-default-retrieve-fine-tuning-job:
+      parameters:
+        path:
+          fine_tuning_job_id: "ft-AF1WoRqd3aJAHsqc9NY7iL8F"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "created_at": 273542, "error": {"code": "<value>", "message": "<value>", "param": "<value>"}, "fine_tuned_model": "<value>", "finished_at": 540931, "hyperparameters": {"n_epochs": "auto"}, "model": "2", "object": "fine_tuning.job", "organization_id": "<id>", "result_files": ["file-abc123"], "status": "failed", "trained_tokens": 412004, "training_file": "<value>", "validation_file": "<value>", "integrations": [], "seed": 974659}
+  cancelFineTuningJob:
+    speakeasy-default-cancel-fine-tuning-job:
+      parameters:
+        path:
+          fine_tuning_job_id: "ft-AF1WoRqd3aJAHsqc9NY7iL8F"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "created_at": 738953, "error": {"code": "<value>", "message": "<value>", "param": "<value>"}, "fine_tuned_model": "<value>", "finished_at": 602056, "hyperparameters": {"n_epochs": 373559}, "model": "LeBaron", "object": "fine_tuning.job", "organization_id": "<id>", "result_files": ["file-abc123"], "status": "succeeded", "trained_tokens": 659259, "training_file": "<value>", "validation_file": "<value>", "integrations": [], "seed": 843347}
+  listFineTuningJobCheckpoints:
+    speakeasy-default-list-fine-tuning-job-checkpoints:
+      parameters:
+        path:
+          fine_tuning_job_id: "ft-AF1WoRqd3aJAHsqc9NY7iL8F"
+        query: {}
+      responses:
+        "200":
+          application/json: {"data": [{"id": "<id>", "created_at": 494884, "fine_tuned_model_checkpoint": "<value>", "step_number": 736196, "fine_tuning_job_id": "<id>", "object": "fine_tuning.job.checkpoint"}, {"id": "<id>", "created_at": 649815, "fine_tuned_model_checkpoint": "<value>", "step_number": 771853, "fine_tuning_job_id": "<id>", "object": "fine_tuning.job.checkpoint"}, {"id": "<id>", "created_at": 94161, "fine_tuned_model_checkpoint": "<value>", "step_number": 294804, "fine_tuning_job_id": "<id>", "object": "fine_tuning.job.checkpoint"}], "object": "list", "has_more": true}
+  listFineTuningEvents:
+    speakeasy-default-list-fine-tuning-events:
+      parameters:
+        path:
+          fine_tuning_job_id: "ft-AF1WoRqd3aJAHsqc9NY7iL8F"
+        query: {}
+      responses:
+        "200":
+          application/json: {"data": [{"id": "<id>", "created_at": 762396, "level": "error", "message": "<value>", "object": "fine_tuning.job.event"}, {"id": "<id>", "created_at": 790561, "level": "error", "message": "<value>", "object": "fine_tuning.job.event"}, {"id": "<id>", "created_at": 217830, "level": "info", "message": "<value>", "object": "fine_tuning.job.event"}], "object": "list"}
+  createImageEdit:
+    speakeasy-default-create-image-edit:
+      requestBody:
+        multipart/form-data: {"image": {}, "prompt": "A cute baby sea otter wearing a beret", "model": "dall-e-2", "n": 1, "size": "1024x1024", "response_format": "url", "user": "user-1234"}
+      responses:
+        "200":
+          application/json: {"created": 165069, "data": []}
+  createImage:
+    speakeasy-default-create-image:
+      requestBody:
+        application/json: {"prompt": "A cute baby sea otter", "model": "dall-e-3", "n": 1, "quality": "standard", "response_format": "url", "size": "1024x1024", "style": "vivid", "user": "user-1234"}
+      responses:
+        "200":
+          application/json: {"created": 194679}
+  createImageVariation:
+    speakeasy-default-create-image-variation:
+      requestBody:
+        multipart/form-data: {"image": {}, "model": "dall-e-2", "n": 1, "response_format": "url", "size": "1024x1024", "user": "user-1234"}
+      responses:
+        "200":
+          application/json: {"created": 685085}
+  listModels:
+    speakeasy-default-list-models:
+      responses:
+        "200":
+          application/json: {"object": "list", "data": [{"id": "<id>", "created": 165118, "object": "model", "owned_by": "<value>"}]}
+  retrieveModel:
+    speakeasy-default-retrieve-model:
+      parameters:
+        path:
+          model: "gpt-4o-mini"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "created": 140919, "object": "model", "owned_by": "<value>"}
+  deleteModel:
+    speakeasy-default-delete-model:
+      parameters:
+        path:
+          model: "ft:gpt-4o-mini:acemeco:suffix:abc123"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "deleted": true, "object": "<value>"}
+  createModeration:
+    speakeasy-default-create-moderation:
+      requestBody:
+        application/json: {"input": [{"type": "image_url", "image_url": {"url": "https://example.com/image.jpg"}}, {"type": "text", "text": "I want to kill them"}, {"type": "image_url", "image_url": {"url": "https://example.com/image.jpg"}}], "model": "omni-moderation-2024-09-26"}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "model": "Colorado", "results": [{"flagged": true, "categories": {"hate": false, "hate/threatening": false, "harassment": true, "harassment/threatening": false, "illicit": false, "illicit/violent": false, "self-harm": false, "self-harm/intent": true, "self-harm/instructions": false, "sexual": true, "sexual/minors": false, "violence": false, "violence/graphic": true}, "category_scores": {"hate": "5158.83", "hate/threatening": "7309.67", "harassment": "710.55", "harassment/threatening": "4386.51", "illicit": "2377.59", "illicit/violent": "2668.10", "self-harm": "5047.30", "self-harm/intent": "1304.40", "self-harm/instructions": "5001.19", "sexual": "7340.67", "sexual/minors": "334.46", "violence": "9339.98", "violence/graphic": "6777.49"}, "category_applied_input_types": {"hate": ["text"], "hate/threatening": [], "harassment": ["text"], "harassment/threatening": ["text", "text", "text"], "illicit": [], "illicit/violent": ["text"], "self-harm": ["image", "text"], "self-harm/intent": ["text"], "self-harm/instructions": ["image", "image", "text"], "sexual": ["text", "image"], "sexual/minors": ["text", "text", "text"], "violence": [], "violence/graphic": ["text", "image", "text"]}}, {"flagged": true, "categories": {"hate": false, "hate/threatening": false, "harassment": true, "harassment/threatening": false, "illicit": true, "illicit/violent": false, "self-harm": false, "self-harm/intent": false, "self-harm/instructions": false, "sexual": true, "sexual/minors": true, "violence": false, "violence/graphic": true}, "category_scores": {"hate": "2290.99", "hate/threatening": "6982.38", "harassment": "9387.70", "harassment/threatening": "5061.64", "illicit": "9536.29", "illicit/violent": "9062.15", "self-harm": "4010.22", "self-harm/intent": "6695.79", "self-harm/instructions": "775.10", "sexual": "6413.08", "sexual/minors": "7004.44", "violence": "3320.44", "violence/graphic": "7407.46"}, "category_applied_input_types": {"hate": [], "hate/threatening": ["text", "text"], "harassment": ["text", "text", "text"], "harassment/threatening": ["text"], "illicit": ["text", "text"], "illicit/violent": ["text", "text", "text"], "self-harm": ["text", "image"], "self-harm/intent": ["image"], "self-harm/instructions": ["image"], "sexual": ["text", "text", "text"], "sexual/minors": ["text", "text"], "violence": ["text", "text", "image"], "violence/graphic": []}}, {"flagged": true, "categories": {"hate": true, "hate/threatening": false, "harassment": false, "harassment/threatening": true, "illicit": false, "illicit/violent": false, "self-harm": true, "self-harm/intent": true, "self-harm/instructions": false, "sexual": true, "sexual/minors": true, "violence": false, "violence/graphic": true}, "category_scores": {"hate": "9255.67", "hate/threatening": "2785.32", "harassment": "2225.80", "harassment/threatening": "7824.58", "illicit": "1198.32", "illicit/violent": "1493.19", "self-harm": "1348.35", "self-harm/intent": "1357.01", "self-harm/instructions": "5348.77", "sexual": "6930.49", "sexual/minors": "2116.51", "violence": "9769.68", "violence/graphic": "8171.12"}, "category_applied_input_types": {"hate": ["text"], "hate/threatening": [], "harassment": ["text"], "harassment/threatening": [], "illicit": ["text", "text", "text"], "illicit/violent": ["text", "text", "text"], "self-harm": ["text"], "self-harm/intent": ["image", "text"], "self-harm/instructions": ["image", "text", "image"], "sexual": ["image", "text"], "sexual/minors": ["text", "text"], "violence": ["image", "image", "image"], "violence/graphic": ["text", "text"]}}]}
+  list-audit-logs:
+    speakeasy-default-list-audit-logs:
+      responses:
+        "200":
+          application/json: {"object": "list", "data": [{"id": "<id>", "type": "logout.succeeded", "effective_at": 935292}, {"id": "<id>", "type": "invite.accepted", "effective_at": 6924}, {"id": "<id>", "type": "user.deleted", "effective_at": 74900}], "first_id": "audit_log-defb456h8dks", "last_id": "audit_log-hnbkd8s93s", "has_more": true}
+  list-invites:
+    speakeasy-default-list-invites:
+      responses:
+        "200":
+          application/json: {"object": "list", "data": [{"object": "organization.invite", "id": "<id>", "email": "Chet.Bradtke@gmail.com", "role": "reader", "status": "expired", "invited_at": 17306, "expires_at": 584600}]}
+  inviteUser:
+    speakeasy-default-invite-user:
+      requestBody:
+        application/json: {"email": "Prudence15@gmail.com", "role": "reader"}
+      responses:
+        "200":
+          application/json: {"object": "organization.invite", "id": "<id>", "email": "Helga.Feeney@yahoo.com", "role": "owner", "status": "pending", "invited_at": 5018, "expires_at": 366549}
+  retrieve-invite:
+    speakeasy-default-retrieve-invite:
+      parameters:
+        path:
+          invite_id: "<id>"
+      responses:
+        "200":
+          application/json: {"object": "organization.invite", "id": "<id>", "email": "Jade54@gmail.com", "role": "reader", "status": "accepted", "invited_at": 474503, "expires_at": 75383}
+  delete-invite:
+    speakeasy-default-delete-invite:
+      parameters:
+        path:
+          invite_id: "<id>"
+      responses:
+        "200":
+          application/json: {"object": "organization.invite.deleted", "id": "<id>", "deleted": true}
+  list-projects:
+    speakeasy-default-list-projects:
+      responses:
+        "200":
+          application/json: {"object": "list", "data": [], "first_id": "<id>", "last_id": "<id>", "has_more": false}
+  create-project:
+    speakeasy-default-create-project:
+      requestBody:
+        application/json: {"name": "<value>"}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "organization.project", "name": "<value>", "created_at": 187147, "status": "archived"}
+  retrieve-project:
+    speakeasy-default-retrieve-project:
+      parameters:
+        path:
+          project_id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "organization.project", "name": "<value>", "created_at": 83430, "status": "active"}
+  modify-project:
+    speakeasy-default-modify-project:
+      parameters:
+        path:
+          project_id: "<id>"
+      requestBody:
+        application/json: {"name": "<value>"}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "organization.project", "name": "<value>", "created_at": 768504, "status": "archived"}
+        "400":
+          application/json: {"error": {"code": "<value>", "message": "<value>", "param": "<value>", "type": "<value>"}}
+  list-project-api-keys:
+    speakeasy-default-list-project-api-keys:
+      parameters:
+        path:
+          project_id: "<id>"
+        query: {}
+      responses:
+        "200":
+          application/json: {"object": "list", "data": [], "first_id": "<id>", "last_id": "<id>", "has_more": true}
+  retrieve-project-api-key:
+    speakeasy-default-retrieve-project-api-key:
+      parameters:
+        path:
+          project_id: "<id>"
+          key_id: "<id>"
+      responses:
+        "200":
+          application/json: {"object": "organization.project.api_key", "redacted_value": "<value>", "name": "<value>", "created_at": 654434, "id": "<id>"}
+  delete-project-api-key:
+    speakeasy-default-delete-project-api-key:
+      parameters:
+        path:
+          project_id: "<id>"
+          key_id: "<id>"
+      responses:
+        "200":
+          application/json: {"object": "organization.project.api_key.deleted", "id": "<id>", "deleted": false}
+        "400":
+          application/json: {"error": {"code": "<value>", "message": "<value>", "param": "<value>", "type": "<value>"}}
+  archive-project:
+    speakeasy-default-archive-project:
+      parameters:
+        path:
+          project_id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "organization.project", "name": "<value>", "created_at": 104377, "status": "active"}
+  list-project-service-accounts:
+    speakeasy-default-list-project-service-accounts:
+      parameters:
+        path:
+          project_id: "<id>"
+        query: {}
+      responses:
+        "200":
+          application/json: {"object": "list", "data": [{"object": "organization.project.service_account", "id": "<id>", "name": "<value>", "role": "owner", "created_at": 435015}, {"object": "organization.project.service_account", "id": "<id>", "name": "<value>", "role": "member", "created_at": 956762}, {"object": "organization.project.service_account", "id": "<id>", "name": "<value>", "role": "owner", "created_at": 775147}], "first_id": "<id>", "last_id": "<id>", "has_more": true}
+        "400":
+          application/json: {"error": {"code": "<value>", "message": "<value>", "param": "<value>", "type": "<value>"}}
+  create-project-service-account:
+    speakeasy-default-create-project-service-account:
+      parameters:
+        path:
+          project_id: "<id>"
+      requestBody:
+        application/json: {"name": "<value>"}
+      responses:
+        "200":
+          application/json: {"object": "organization.project.service_account", "id": "<id>", "name": "<value>", "role": "member", "created_at": 497935, "api_key": {"object": "organization.project.service_account.api_key", "value": "<value>", "name": "<value>", "created_at": 150457, "id": "<id>"}}
+        "400":
+          application/json: {"error": {"code": "<value>", "message": "<value>", "param": "<value>", "type": "<value>"}}
+  retrieve-project-service-account:
+    speakeasy-default-retrieve-project-service-account:
+      parameters:
+        path:
+          project_id: "<id>"
+          service_account_id: "<id>"
+      responses:
+        "200":
+          application/json: {"object": "organization.project.service_account", "id": "<id>", "name": "<value>", "role": "owner", "created_at": 966914}
+  delete-project-service-account:
+    speakeasy-default-delete-project-service-account:
+      parameters:
+        path:
+          project_id: "<id>"
+          service_account_id: "<id>"
+      responses:
+        "200":
+          application/json: {"object": "organization.project.service_account.deleted", "id": "<id>", "deleted": true}
+  list-project-users:
+    speakeasy-default-list-project-users:
+      parameters:
+        path:
+          project_id: "<id>"
+        query: {}
+      responses:
+        "200":
+          application/json: {"object": "<value>", "data": [{"object": "organization.project.user", "id": "<id>", "name": "<value>", "email": "Holden_Farrell@hotmail.com", "role": "member", "added_at": 534716}, {"object": "organization.project.user", "id": "<id>", "name": "<value>", "email": "Arvilla44@yahoo.com", "role": "member", "added_at": 1987}, {"object": "organization.project.user", "id": "<id>", "name": "<value>", "email": "Derrick.Runolfsdottir@gmail.com", "role": "owner", "added_at": 742308}], "first_id": "<id>", "last_id": "<id>", "has_more": false}
+        "400":
+          application/json: {"error": {"code": "<value>", "message": "<value>", "param": "<value>", "type": "<value>"}}
+  create-project-user:
+    speakeasy-default-create-project-user:
+      parameters:
+        path:
+          project_id: "<id>"
+      requestBody:
+        application/json: {"user_id": "<id>", "role": "member"}
+      responses:
+        "200":
+          application/json: {"object": "organization.project.user", "id": "<id>", "name": "<value>", "email": "Eryn86@yahoo.com", "role": "owner", "added_at": 638084}
+        "400":
+          application/json: {"error": {"code": "<value>", "message": "<value>", "param": "<value>", "type": "<value>"}}
+  retrieve-project-user:
+    speakeasy-default-retrieve-project-user:
+      parameters:
+        path:
+          project_id: "<id>"
+          user_id: "<id>"
+      responses:
+        "200":
+          application/json: {"object": "organization.project.user", "id": "<id>", "name": "<value>", "email": "Noemie_Cummerata@gmail.com", "role": "member", "added_at": 666696}
+  modify-project-user:
+    speakeasy-default-modify-project-user:
+      parameters:
+        path:
+          project_id: "<id>"
+          user_id: "<id>"
+      requestBody:
+        application/json: {"role": "member"}
+      responses:
+        "200":
+          application/json: {"object": "organization.project.user", "id": "<id>", "name": "<value>", "email": "Kayley43@yahoo.com", "role": "owner", "added_at": 334348}
+        "400":
+          application/json: {"error": {"code": "<value>", "message": "<value>", "param": "<value>", "type": "<value>"}}
+  delete-project-user:
+    speakeasy-default-delete-project-user:
+      parameters:
+        path:
+          project_id: "<id>"
+          user_id: "<id>"
+      responses:
+        "200":
+          application/json: {"object": "organization.project.user.deleted", "id": "<id>", "deleted": false}
+        "400":
+          application/json: {"error": {"code": "<value>", "message": "<value>", "param": "<value>", "type": "<value>"}}
+  list-users:
+    speakeasy-default-list-users:
+      responses:
+        "200":
+          application/json: {"object": "list", "data": [{"object": "organization.user", "id": "<id>", "name": "<value>", "email": "Xander_OKon@yahoo.com", "role": "reader", "added_at": 621109}, {"object": "organization.user", "id": "<id>", "name": "<value>", "email": "Cordelia11@yahoo.com", "role": "owner", "added_at": 330392}], "first_id": "<id>", "last_id": "<id>", "has_more": true}
+  retrieve-user:
+    speakeasy-default-retrieve-user:
+      parameters:
+        path:
+          user_id: "<id>"
+      responses:
+        "200":
+          application/json: {"object": "organization.user", "id": "<id>", "name": "<value>", "email": "Sebastian75@hotmail.com", "role": "owner", "added_at": 512667}
+  modify-user:
+    speakeasy-default-modify-user:
+      parameters:
+        path:
+          user_id: "<id>"
+      requestBody:
+        application/json: {"role": "reader"}
+      responses:
+        "200":
+          application/json: {"object": "organization.user", "id": "<id>", "name": "<value>", "email": "Carlie7@gmail.com", "role": "reader", "added_at": 384243}
+  delete-user:
+    speakeasy-default-delete-user:
+      parameters:
+        path:
+          user_id: "<id>"
+      responses:
+        "200":
+          application/json: {"object": "organization.user.deleted", "id": "<id>", "deleted": true}
+  createUpload:
+    speakeasy-default-create-upload:
+      requestBody:
+        application/json: {"filename": "example.file", "purpose": "assistants", "bytes": 272980, "mime_type": "<value>"}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "created_at": 676159, "filename": "example.file", "bytes": 131624, "purpose": "<value>", "status": "cancelled", "expires_at": 942703}
+  cancelUpload:
+    speakeasy-default-cancel-upload:
+      parameters:
+        path:
+          upload_id: "upload_abc123"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "created_at": 785545, "filename": "example.file", "bytes": 643543, "purpose": "<value>", "status": "completed", "expires_at": 372}
+  completeUpload:
+    speakeasy-default-complete-upload:
+      parameters:
+        path:
+          upload_id: "upload_abc123"
+      requestBody:
+        application/json: {"part_ids": []}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "created_at": 456845, "filename": "example.file", "bytes": 597217, "purpose": "<value>", "status": "cancelled", "expires_at": 702111}
+  addUploadPart:
+    speakeasy-default-add-upload-part:
+      parameters:
+        path:
+          upload_id: "upload_abc123"
+      requestBody:
+        multipart/form-data: {"data": {}}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "created_at": 466697, "upload_id": "<id>", "object": "upload.part"}
+  listVectorStores:
+    speakeasy-default-list-vector-stores:
+      responses:
+        "200":
+          application/json: {"object": "list", "data": [{"id": "<id>", "object": "vector_store", "created_at": 375619, "name": "<value>", "usage_bytes": 618330, "file_counts": {"in_progress": 554398, "completed": 128229, "failed": 836634, "cancelled": 21745, "total": 899433}, "status": "expired", "last_active_at": 582093}], "first_id": "vs_abc123", "last_id": "vs_abc456", "has_more": false}
+  createVectorStore:
+    speakeasy-default-create-vector-store:
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "vector_store", "created_at": 594388, "name": "<value>", "usage_bytes": 589747, "file_counts": {"in_progress": 898163, "completed": 619327, "failed": 244926, "cancelled": 472640, "total": 735151}, "status": "in_progress", "last_active_at": 472917}
+  getVectorStore:
+    speakeasy-default-get-vector-store:
+      parameters:
+        path:
+          vector_store_id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "vector_store", "created_at": 341217, "name": "<value>", "usage_bytes": 56920, "file_counts": {"in_progress": 420142, "completed": 249182, "failed": 464236, "cancelled": 319437, "total": 51614}, "status": "in_progress", "last_active_at": 446488}
+  modifyVectorStore:
+    speakeasy-default-modify-vector-store:
+      parameters:
+        path:
+          vector_store_id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "vector_store", "created_at": 138930, "name": "<value>", "usage_bytes": 522038, "file_counts": {"in_progress": 143807, "completed": 752904, "failed": 846446, "cancelled": 150145, "total": 708584}, "status": "in_progress", "last_active_at": 578877}
+  deleteVectorStore:
+    speakeasy-default-delete-vector-store:
+      parameters:
+        path:
+          vector_store_id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "deleted": false, "object": "vector_store.deleted"}
+  createVectorStoreFileBatch:
+    speakeasy-default-create-vector-store-file-batch:
+      parameters:
+        path:
+          vector_store_id: "vs_abc123"
+      requestBody:
+        application/json: {"file_ids": ["<value>"]}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "vector_store.files_batch", "created_at": 878723, "vector_store_id": "<id>", "status": "in_progress", "file_counts": {"in_progress": 975027, "completed": 844739, "failed": 406701, "cancelled": 536776, "total": 333907}}
+  getVectorStoreFileBatch:
+    speakeasy-default-get-vector-store-file-batch:
+      parameters:
+        path:
+          vector_store_id: "vs_abc123"
+          batch_id: "vsfb_abc123"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "vector_store.files_batch", "created_at": 326735, "vector_store_id": "<id>", "status": "in_progress", "file_counts": {"in_progress": 873555, "completed": 368331, "failed": 938876, "cancelled": 926702, "total": 420303}}
+  cancelVectorStoreFileBatch:
+    speakeasy-default-cancel-vector-store-file-batch:
+      parameters:
+        path:
+          vector_store_id: "<id>"
+          batch_id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "vector_store.files_batch", "created_at": 312183, "vector_store_id": "<id>", "status": "completed", "file_counts": {"in_progress": 469230, "completed": 420665, "failed": 39420, "cancelled": 323853, "total": 670584}}
+  listFilesInVectorStoreBatch:
+    speakeasy-default-list-files-in-vector-store-batch:
+      parameters:
+        path:
+          vector_store_id: "<id>"
+          batch_id: "<id>"
+        query: {}
+      responses:
+        "200":
+          application/json: {"object": "list", "data": [{"id": "<id>", "object": "vector_store.file", "usage_bytes": 571614, "created_at": 406886, "vector_store_id": "<id>", "status": "cancelled", "last_error": {"code": "server_error", "message": "<value>"}}, {"id": "<id>", "object": "vector_store.file", "usage_bytes": 590046, "created_at": 448124, "vector_store_id": "<id>", "status": "completed", "last_error": {"code": "invalid_file", "message": "<value>"}}, {"id": "<id>", "object": "vector_store.file", "usage_bytes": 207458, "created_at": 4067, "vector_store_id": "<id>", "status": "cancelled", "last_error": {"code": "unsupported_file", "message": "<value>"}}], "first_id": "file-abc123", "last_id": "file-abc456", "has_more": false}
+  listVectorStoreFiles:
+    speakeasy-default-list-vector-store-files:
+      parameters:
+        path:
+          vector_store_id: "<id>"
+        query: {}
+      responses:
+        "200":
+          application/json: {"object": "list", "data": [], "first_id": "file-abc123", "last_id": "file-abc456", "has_more": false}
+  createVectorStoreFile:
+    speakeasy-default-create-vector-store-file:
+      parameters:
+        path:
+          vector_store_id: "vs_abc123"
+      requestBody:
+        application/json: {"file_id": "<id>"}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "vector_store.file", "usage_bytes": 888370, "created_at": 23452, "vector_store_id": "<id>", "status": "cancelled", "last_error": {"code": "invalid_file", "message": "<value>"}}
+  getVectorStoreFile:
+    speakeasy-default-get-vector-store-file:
+      parameters:
+        path:
+          vector_store_id: "vs_abc123"
+          file_id: "file-abc123"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "object": "vector_store.file", "usage_bytes": 503466, "created_at": 643918, "vector_store_id": "<id>", "status": "in_progress", "last_error": {"code": "unsupported_file", "message": "<value>"}}
+  deleteVectorStoreFile:
+    speakeasy-default-delete-vector-store-file:
+      parameters:
+        path:
+          vector_store_id: "<id>"
+          file_id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "<id>", "deleted": false, "object": "vector_store.file.deleted"}
