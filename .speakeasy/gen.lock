@@ -3,10 +3,12 @@ id: 91074390-7f0c-4371-884d-2ee055c839f7
 management:
   docChecksum: 103c4506406ad94b442dd37f48e7e587
   docVersion: 2.3.0
-  speakeasyVersion: 1.443.0
+  speakeasyVersion: 1.444.3
   generationVersion: 2.461.4
-  releaseVersion: 0.1.1
-  configChecksum: 776376876028743353502f10b61c952d
+  releaseVersion: 0.1.2
+  configChecksum: f365c3b55a5d0fe086e5e326a1a651a3
+  repoURL: https://github.com/jamelt/openai-api.git
+  installationURL: https://github.com/jamelt/openai-api
 features:
   go:
     additionalDependencies: 0.1.0
