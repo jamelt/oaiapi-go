@@ -14,5 +14,5 @@ targets:
         source: openai-api-OAS
         codeSamples:
             registry:
-                location: registry.speakeasyapi.dev/jamelt/jamelt/openai-api-oas-code-samples
+                location: registry.speakeasyapi.dev/jamelt/jamelt/openai-api-oas-go-code-samples
             blocking: false

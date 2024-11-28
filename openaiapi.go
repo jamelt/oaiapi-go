@@ -176,9 +176,9 @@ func New(opts ...SDKOption) *OpenaiAPI {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "2.3.0",
-			SDKVersion:        "0.1.1",
-			GenVersion:        "2.461.4",
-			UserAgent:         "speakeasy-sdk/go 0.1.1 2.461.4 2.3.0 github.com/jamelt/openai-api",
+			SDKVersion:        "0.2.0",
+			GenVersion:        "2.467.4",
+			UserAgent:         "speakeasy-sdk/go 0.2.0 2.467.4 2.3.0 github.com/jamelt/openai-api",
 			Hooks:             hooks.New(),
 		},
 	}

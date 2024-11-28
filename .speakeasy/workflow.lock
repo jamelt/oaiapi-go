@@ -1,19 +1,21 @@
-speakeasyVersion: 1.443.0
+speakeasyVersion: 1.448.2
 sources:
     openai-api-OAS:
         sourceNamespace: openai-api-oas
-        sourceRevisionDigest: sha256:4f605df99068c3b5eb0cfcb41f6fb154e4589646a065bc7262e1fdcdd6849e6e
-        sourceBlobDigest: sha256:2b8e35217f3702d75dea916028a8ad99a9b590353a16ccdec483f7680b106e84
+        sourceRevisionDigest: sha256:ac023c658cef1ba8a71ed08d94e57e6eef0009094f697ee8fcc17d324e68395a
+        sourceBlobDigest: sha256:61b423fe53cea124091cf9109ccbf250b673c930eab601b721274a710f370083
         tags:
             - latest
+            - speakeasy-sdk-regen-1732254212
+            - 2.3.0
 targets:
     openai-api:
         source: openai-api-OAS
         sourceNamespace: openai-api-oas
-        sourceRevisionDigest: sha256:4f605df99068c3b5eb0cfcb41f6fb154e4589646a065bc7262e1fdcdd6849e6e
-        sourceBlobDigest: sha256:2b8e35217f3702d75dea916028a8ad99a9b590353a16ccdec483f7680b106e84
-        codeSamplesNamespace: openai-api-oas-code-samples
-        codeSamplesRevisionDigest: sha256:aac0266c834834ce1f3e7b34707dd812b3ab7f506a28bff932ad4ad61400bd39
+        sourceRevisionDigest: sha256:ac023c658cef1ba8a71ed08d94e57e6eef0009094f697ee8fcc17d324e68395a
+        sourceBlobDigest: sha256:61b423fe53cea124091cf9109ccbf250b673c930eab601b721274a710f370083
+        codeSamplesNamespace: openai-api-oas-go-code-samples
+        codeSamplesRevisionDigest: sha256:03d5df8cb13220dd339bb2d3036685a3c99efdb94f65c2a9e79632b19e0f4867
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
@@ -31,5 +33,5 @@ workflow:
             source: openai-api-OAS
             codeSamples:
                 registry:
-                    location: registry.speakeasyapi.dev/jamelt/jamelt/openai-api-oas-code-samples
+                    location: registry.speakeasyapi.dev/jamelt/jamelt/openai-api-oas-go-code-samples
                 blocking: false

@@ -27,8 +27,8 @@ package main
 import(
 	"os"
 	openaiapi "github.com/jamelt/openai-api"
-	"context"
 	"github.com/jamelt/openai-api/models/components"
+	"context"
 	"log"
 )
 

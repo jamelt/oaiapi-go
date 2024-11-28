@@ -97,8 +97,8 @@ package main
 import(
 	"os"
 	openaiapi "github.com/jamelt/openai-api"
-	"context"
 	"github.com/jamelt/openai-api/models/components"
+	"context"
 	"log"
 )
 
@@ -204,8 +204,8 @@ package main
 import(
 	"os"
 	openaiapi "github.com/jamelt/openai-api"
-	"context"
 	"github.com/jamelt/openai-api/models/components"
+	"context"
 	"log"
 )
 
@@ -359,8 +359,8 @@ package main
 import(
 	"os"
 	openaiapi "github.com/jamelt/openai-api"
-	"context"
 	"github.com/jamelt/openai-api/models/components"
+	"context"
 	"log"
 )
 
@@ -467,8 +467,8 @@ package main
 import(
 	"os"
 	openaiapi "github.com/jamelt/openai-api"
-	"context"
 	"github.com/jamelt/openai-api/models/components"
+	"context"
 	"log"
 )
 
@@ -569,8 +569,8 @@ package main
 import(
 	"os"
 	openaiapi "github.com/jamelt/openai-api"
-	"context"
 	"github.com/jamelt/openai-api/models/operations"
+	"context"
 	"log"
 )
 
@@ -622,8 +622,8 @@ package main
 import(
 	"os"
 	openaiapi "github.com/jamelt/openai-api"
-	"context"
 	"github.com/jamelt/openai-api/models/components"
+	"context"
 	"log"
 )
 
@@ -637,11 +637,11 @@ func main() {
         Role: components.CreateMessageRequestRoleUser,
         Content: components.CreateCreateMessageRequestContentArrayOfContent2(
             []components.Content2{
-                components.CreateContent2MessageContentImageFileObject(
-                    components.MessageContentImageFileObject{
-                        Type: components.MessageContentImageFileObjectTypeImageFile,
-                        ImageFile: components.ImageFile{
-                            FileID: "<id>",
+                components.CreateContent2MessageContentImageURLObject(
+                    components.MessageContentImageURLObject{
+                        Type: components.MessageContentImageURLObjectTypeImageURL,
+                        ImageURL: components.MessageContentImageURLObjectImageURL{
+                            URL: "https://frivolous-version.name/",
                         },
                     },
                 ),
@@ -739,8 +739,8 @@ package main
 import(
 	"os"
 	openaiapi "github.com/jamelt/openai-api"
-	"context"
 	"github.com/jamelt/openai-api/models/components"
+	"context"
 	"log"
 )
 
@@ -843,8 +843,8 @@ package main
 import(
 	"os"
 	openaiapi "github.com/jamelt/openai-api"
-	"context"
 	"github.com/jamelt/openai-api/models/operations"
+	"context"
 	"log"
 )
 
@@ -896,8 +896,8 @@ package main
 import(
 	"os"
 	openaiapi "github.com/jamelt/openai-api"
-	"context"
 	"github.com/jamelt/openai-api/models/components"
+	"context"
 	"log"
 )
 
@@ -1007,8 +1007,8 @@ package main
 import(
 	"os"
 	openaiapi "github.com/jamelt/openai-api"
-	"context"
 	"github.com/jamelt/openai-api/models/components"
+	"context"
 	"log"
 )
 
@@ -1111,8 +1111,8 @@ package main
 import(
 	"os"
 	openaiapi "github.com/jamelt/openai-api"
-	"context"
 	"github.com/jamelt/openai-api/models/operations"
+	"context"
 	"log"
 )
 
@@ -1219,8 +1219,8 @@ package main
 import(
 	"os"
 	openaiapi "github.com/jamelt/openai-api"
-	"context"
 	"github.com/jamelt/openai-api/models/components"
+	"context"
 	"log"
 )
 
